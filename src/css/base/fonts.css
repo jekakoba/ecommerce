@@ -1,0 +1,51 @@
+/**
+ * Baskervville font face
+ */
+@font-face {
+  font-family: "Baskervville";
+  font-display: swap;
+  src:
+    url("/Baskervville-Regular.woff2") format("woff2"),
+    url("/Baskervville-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/**
+  * HelveticaNeueBold font face
+  */
+@font-face {
+  font-family: "HelveticaNeueBold";
+  font-display: swap;
+  src:
+    url("/HelveticaNeueBold.woff2") format("woff2"),
+    url("/HelveticaNeueBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/**
+  * HelveticaNeueLight font face
+  */
+@font-face {
+  font-family: "HelveticaNeueLight";
+  font-display: swap;
+  src:
+    url("/HelveticaNeueLight.woff2") format("woff2"),
+    url("/HelveticaNeueLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/**
+  * HelveticaNeueRoman font face
+  */
+@font-face {
+  font-family: "HelveticaNeueRoman";
+  font-display: swap;
+  src:
+    url("/HelveticaNeueRoman.woff2") format("woff2"),
+    url("/HelveticaNeueRoman.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}

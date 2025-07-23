@@ -1,0 +1,98 @@
+.header {
+  @apply fixed top-0 left-0 w-full z-[999];
+}
+
+.header .header_white {
+  @apply bg-white text-primary;
+}
+.modal-open .header {
+  @apply bg-white text-primary border-b-1 border-[#F0F0F0] duration-100;
+}
+.modal-open .logo svg path {
+  @apply fill-primary;
+}
+
+.modal-open .btn-menu span,
+.modal-open .btn-menu::before,
+.modal-open .btn-menu::after {
+  @apply bg-primary;
+}
+
+.header_white .logo svg path {
+  @apply fill-primary;
+}
+.header_white .btn-menu span,
+.header_white .btn-menu::before,
+.header_white .btn-menu::after {
+  @apply bg-primary;
+}
+
+.logo {
+  @apply max-w-[220px] h-[30px];
+}
+
+.logo svg {
+  @apply w-full h-full;
+}
+.logo svg path {
+  @apply [.scrolled-page_&]:fill-primary;
+}
+
+.btn-menu {
+  @apply block relative shrink-0 basis-8 w-8 h-8 cursor-pointer z-20 min-1xs:hidden;
+}
+.btn-menu span,
+.btn-menu::before,
+.btn-menu::after {
+  @apply content-[''] absolute right-1 left-1 bg-white h-[2px] transition-all duration-300 ease-linear;
+}
+
+.btn-menu span {
+  @apply [.scrolled-page_&]:bg-black;
+}
+.btn-menu {
+  @apply [.scrolled-page_&]:before:bg-black;
+}
+.btn-menu {
+  @apply [.scrolled-page_&]:after:bg-black;
+}
+
+.btn-menu::before {
+  @apply top-2;
+}
+.btn-menu::after {
+  @apply bottom-2;
+}
+
+.btn-menu span {
+  @apply top-[calc(50%-1px)];
+}
+
+.menu-open .btn-menu span {
+  @apply w-0;
+}
+.menu-open .btn-menu::before {
+  @apply -rotate-45 top-[calc(50%-1px)];
+}
+.menu-open .btn-menu::after {
+  @apply rotate-45 bottom-[calc(50%-1px)];
+}
+
+.header-action-line {
+  @apply relative;
+}
+.header-action-line::after {
+  @apply content-[''] absolute w-full left-0 h-2 bg-accent pointer-events-none top-[calc(100%+30px)];
+}
+
+.scrolled-page .header-action-line::after,
+.modal-open .header-action-line::after {
+  @apply top-[calc(100%+24px)];
+}
+
+@media (max-width: 640px) {
+  .header-action-line::after {
+    top: calc(100% + 10px) !important;
+    @apply h-1 !top-[calc(100%+10px)];
+  }
+}

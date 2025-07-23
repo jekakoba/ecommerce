@@ -1,0 +1,114 @@
+/* 
+ * Button Components
+ * 
+ * Reusable button styles with variants for different purposes.
+ * 
+ * Using Tailwind's @apply directive with direct class definitions for better compatibility with production builds.
+ */
+
+.btn {
+  @apply font-sans !leading-btn inline-flex items-center px-5 py-[10px] justify-center rounded-sm uppercase text-lg tracking-wider text-center min-h-12 bg-white transition-colors duration-300 max-sm:w-full cursor-pointer;
+}
+
+.btn_dark {
+  @apply bg-primary text-white hover:bg-biege-25 hover:text-primary;
+}
+.btn_primary-text {
+  @apply !text-primary hover:!text-white;
+}
+
+.btn_big {
+  @apply min-h-14;
+}
+.btn_xl {
+  @apply min-h-16;
+}
+.btn_small {
+  @apply min-h-12;
+}
+
+.btn_transparent {
+  @apply border border-accent bg-transparent text-white hover:bg-biege-25 hover:text-primary hover:border-biege-25;
+}
+.btn_arrow span {
+  @apply flex flex-row-reverse items-center gap-[6px];
+}
+
+.btn_arrow span:before {
+  @apply text-2xl;
+}
+
+.btn_arrow span::before {
+  @apply duration-300 ease-in-out;
+}
+.btn_arrow:hover span::before {
+  @apply translate-x-1 transition-transform duration-300 ease-in-out;
+}
+
+.btn_transparent-dark {
+  @apply border border-primary text-primary bg-transparent text-x hover:bg-primary hover:text-white;
+}
+.btn_transparent-no-border {
+  @apply border-transparent cursor-auto text-x;
+}
+.btn_transparent-no-border a:hover {
+  @apply underline;
+}
+.btn_white {
+  @apply bg-white text-burgundy hover:bg-primary hover:text-white;
+}
+
+/* Showmore */
+
+.btn-showmore {
+  @apply tracking-wider font-light text-x uppercase flex  gap-2 items-center transition-colors duration-300 ease-in-out hover:text-hover-link-accent;
+}
+.btn-showmore i {
+  @apply rotate-90  text-lg;
+}
+
+.btn-showmore_hide {
+  @apply hidden;
+}
+
+._showmore-active .btn-showmore_more {
+  @apply hidden;
+}
+._showmore-active .btn-showmore_hide {
+  @apply flex;
+}
+._showmore-active .btn-showmore_hide::before {
+  @apply scale-[-1];
+}
+
+.btn-add i {
+  @apply w-5 h-5 basis-5 shrink-0;
+}
+
+.btn-add i svg path {
+  stroke: #3b3b3b;
+}
+
+.btn-add i svg path {
+  @apply duration-300 ease-in-out;
+}
+
+.added.btn-add i {
+  animation: pulsBtn 0.7s both;
+}
+
+.added.btn-add i svg path {
+  stroke: red;
+  fill: red;
+}
+@media (any-hover: hover) {
+  &:hover {
+    .btn-add:hover i svg path {
+      stroke: white;
+    }
+    .added.btn-add i svg path {
+      stroke: red;
+      fill: red;
+    }
+  }
+}

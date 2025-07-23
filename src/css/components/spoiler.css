@@ -1,0 +1,28 @@
+.init .spoiler-panel {
+  @apply cursor-pointer select-none;
+}
+
+.spoiler-content {
+  @apply overflow-hidden hidden transition-all duration-0;
+}
+
+.init-show .spoiler-content,
+.init-hidden .spoiler-content {
+  @apply block;
+}
+
+.init .spoiler-content {
+  @apply hidden;
+}
+
+.init.show .spoiler-content {
+  @apply block;
+}
+
+.spoiler.init .spoiler-content > * {
+  @apply opacity-0 transition-opacity duration-500;
+}
+
+.spoiler.init.spoiler-open .spoiler-content > * {
+  @apply opacity-100;
+}

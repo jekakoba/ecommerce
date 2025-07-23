@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Single product</title>
+	<!-- Vite will process and inject CSS from this JavaScript entry point -->
+	<script type="module" src="/src/js/app.js"></script>
+	<include src="@html/fonts.html"></include>
+	<!-- Add a link to the CSS file directly as well for better browser caching -->
+	<link rel="stylesheet" href="/src/css/app.css">
+</head>
+
+<body class="font-primary text-primary  leading-tight">
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol id="facebook">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 21">
+				<g clip-path="url(#clip0_2212_4485)">
+					<path
+						d="M3.05277 21V11.1462H0.5V7.59835H3.05277V4.56802C3.05277 2.18677 4.5607 0 8.03529 0C9.4421 0 10.4824 0.137655 10.4824 0.137655L10.4004 3.45074C10.4004 3.45074 9.33949 3.4402 8.18178 3.4402C6.92879 3.4402 6.72804 4.02956 6.72804 5.00776V7.59835H10.5L10.3359 11.1462H6.72804V21H3.05277Z" />
+				</g>
+				<defs>
+					<clipPath id="clip0_2212_4485">
+						<rect width="10" height="21" fill="white" transform="translate(0.5)" />
+					</clipPath>
+				</defs>
+			</svg>
+		</symbol>
+		<symbol id="instagram">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20">
+				<g clip-path="url(#clip0_2212_4487)">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M6.45103 0.237639C7.49835 0.189425 7.83228 0.178711 10.5001 0.178711C13.168 0.178711 13.5019 0.190318 14.5484 0.237639C15.5948 0.284961 16.3091 0.451925 16.9341 0.693889C17.5885 0.941211 18.1823 1.32782 18.6734 1.82782C19.1734 2.318 19.5591 2.91085 19.8055 3.56621C20.0484 4.19121 20.2144 4.9055 20.2626 5.95014C20.3109 6.99925 20.3216 7.33318 20.3216 10.0001C20.3216 12.668 20.31 13.0019 20.2626 14.0492C20.2153 15.0939 20.0484 15.8082 19.8055 16.4332C19.5591 17.0886 19.1727 17.6825 18.6734 18.1734C18.1823 18.6734 17.5885 19.0591 16.9341 19.3055C16.3091 19.5484 15.5948 19.7144 14.5501 19.7626C13.5019 19.8109 13.168 19.8216 10.5001 19.8216C7.83228 19.8216 7.49835 19.81 6.45103 19.7626C5.40639 19.7153 4.6921 19.5484 4.0671 19.3055C3.41168 19.059 2.81784 18.6727 2.32693 18.1734C1.82726 17.6829 1.4406 17.0893 1.19389 16.4341C0.951925 15.8091 0.785854 15.0948 0.737639 14.0501C0.689425 13.001 0.678711 12.6671 0.678711 10.0001C0.678711 7.33228 0.690318 6.99835 0.737639 5.95193C0.784961 4.9055 0.951925 4.19121 1.19389 3.56621C1.44096 2.91093 1.82792 2.31738 2.32782 1.82693C2.81803 1.32737 3.41128 0.940714 4.06621 0.693889C4.69121 0.451925 5.4055 0.285854 6.45014 0.237639H6.45103ZM14.4689 2.0055C13.4332 1.95818 13.1225 1.94835 10.5001 1.94835C7.87782 1.94835 7.5671 1.95818 6.53139 2.0055C5.57335 2.04925 5.05371 2.20907 4.70728 2.34389C4.24925 2.52246 3.92157 2.73407 3.57782 3.07782C3.25197 3.39483 3.00119 3.78075 2.84389 4.20728C2.70907 4.55371 2.54925 5.07335 2.5055 6.03139C2.45818 7.0671 2.44835 7.37782 2.44835 10.0001C2.44835 12.6225 2.45818 12.9332 2.5055 13.9689C2.54925 14.9269 2.70907 15.4466 2.84389 15.793C3.00103 16.2189 3.25193 16.6055 3.57782 16.9225C3.89478 17.2484 4.28139 17.4992 4.70728 17.6564C5.05371 17.7912 5.57335 17.951 6.53139 17.9948C7.5671 18.0421 7.87692 18.0519 10.5001 18.0519C13.1234 18.0519 13.4332 18.0421 14.4689 17.9948C15.4269 17.951 15.9466 17.7912 16.293 17.6564C16.751 17.4778 17.0787 17.2662 17.4225 16.9225C17.7484 16.6055 17.9992 16.2189 18.1564 15.793C18.2912 15.4466 18.451 14.9269 18.4948 13.9689C18.5421 12.9332 18.5519 12.6225 18.5519 10.0001C18.5519 7.37782 18.5421 7.0671 18.4948 6.03139C18.451 5.07335 18.2912 4.55371 18.1564 4.20728C17.9778 3.74925 17.7662 3.42157 17.4225 3.07782C17.1054 2.75199 16.7195 2.50122 16.293 2.34389C15.9466 2.20907 15.4269 2.04925 14.4689 2.0055ZM9.24568 13.0278C9.94626 13.3195 10.7264 13.3588 11.4528 13.1392C12.1791 12.9195 12.8067 12.4545 13.2284 11.8236C13.65 11.1926 13.8395 10.4348 13.7645 9.6797C13.6895 8.92455 13.3546 8.21887 12.8171 7.68318C12.4745 7.34074 12.0602 7.07854 11.604 6.91545C11.1479 6.75236 10.6612 6.69243 10.1792 6.73997C9.69707 6.78752 9.23153 6.94137 8.81604 7.19043C8.40055 7.4395 8.04545 7.77759 7.7763 8.18036C7.50716 8.58314 7.33067 9.04058 7.25953 9.51975C7.18839 9.99892 7.22438 10.4879 7.36491 10.9515C7.50543 11.4151 7.747 11.8418 8.07221 12.2008C8.39743 12.5598 8.7982 12.8423 9.24568 13.0278ZM6.9305 6.4305C7.39927 5.96172 7.95578 5.58987 8.56826 5.33618C9.18074 5.08248 9.8372 4.9519 10.5001 4.9519C11.1631 4.9519 11.8195 5.08248 12.432 5.33618C13.0445 5.58987 13.601 5.96172 14.0698 6.4305C14.5386 6.89927 14.9104 7.45578 15.1641 8.06826C15.4178 8.68074 15.5484 9.3372 15.5484 10.0001C15.5484 10.6631 15.4178 11.3195 15.1641 11.932C14.9104 12.5445 14.5386 13.101 14.0698 13.5698C13.1231 14.5165 11.839 15.0484 10.5001 15.0484C9.16126 15.0484 7.87722 14.5165 6.9305 13.5698C5.98377 12.6231 5.4519 11.339 5.4519 10.0001C5.4519 8.66126 5.98377 7.37722 6.9305 6.4305ZM16.668 5.70371C16.7842 5.59413 16.8772 5.46235 16.9415 5.31619C17.0058 5.17002 17.0401 5.01243 17.0425 4.85276C17.0448 4.69308 17.0151 4.53456 16.955 4.38658C16.895 4.2386 16.8059 4.10417 16.693 3.99125C16.58 3.87832 16.4456 3.78921 16.2976 3.72917C16.1497 3.66914 15.9911 3.6394 15.8315 3.64173C15.6718 3.64406 15.5142 3.6784 15.368 3.74273C15.2219 3.80705 15.0901 3.90005 14.9805 4.01621C14.7674 4.24213 14.6507 4.54221 14.6552 4.85276C14.6598 5.1633 14.7851 5.45985 15.0047 5.67946C15.2244 5.89907 15.5209 6.02445 15.8315 6.02898C16.142 6.0335 16.4421 5.91683 16.668 5.70371Z" />
+				</g>
+				<defs>
+					<clipPath id="clip0_2212_4487">
+						<rect width="20" height="20" fill="white" transform="translate(0.5)" />
+					</clipPath>
+				</defs>
+			</svg>
+		</symbol>
+		<symbol id="twitter">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+				<path
+					d="M2.76172 3.5L11.04 15.3307L3.19694 24.5H6.27767L12.4186 17.3018L17.4544 24.5H25.5163L16.8574 12.1042L24.1969 3.5H21.1641L15.4834 10.1354L10.8486 3.5H2.76172ZM7.24154 5.83333H9.63184L21.0387 22.1667H18.6689L7.24154 5.83333Z" />
+			</svg>
+		</symbol>
+		<symbol id="pinterest">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+				<path
+					d="M14.0002 2.3335C7.55666 2.3335 2.3335 7.55666 2.3335 14.0002C2.3335 20.4437 7.55666 25.6668 14.0002 25.6668C20.4437 25.6668 25.6668 20.4437 25.6668 14.0002C25.6668 7.55666 20.4437 2.3335 14.0002 2.3335ZM14.0002 4.66683C19.1545 4.66683 23.3335 8.84583 23.3335 14.0002C23.3335 19.1545 19.1545 23.3335 14.0002 23.3335C13.1419 23.3335 12.3149 23.2086 11.5256 22.9917C11.7738 22.4915 11.9966 21.9644 12.118 21.4969C12.2522 20.9836 12.8016 18.8901 12.8016 18.8901C13.1586 19.5715 14.202 20.1502 15.3127 20.1502C18.6178 20.1502 21.0002 17.1102 21.0002 13.3325C21.0002 9.71002 18.045 7.00016 14.2417 7.00016C9.51087 7.00016 7.00016 10.1753 7.00016 13.6333C7.00016 15.241 7.85562 17.2425 9.22412 17.8807C9.43179 17.9775 9.54315 17.9355 9.59098 17.7349C9.62832 17.582 9.81349 16.8372 9.89632 16.4907C9.92315 16.3811 9.91096 16.2848 9.82113 16.1763C9.36846 15.6268 9.00537 14.6181 9.00537 13.6766C9.00537 11.2581 10.8361 8.91878 13.9546 8.91878C16.6473 8.91878 18.5324 10.7543 18.5324 13.3781C18.5324 16.3426 17.0354 18.3957 15.0871 18.3957C14.0114 18.3957 13.2034 17.5075 13.4624 16.4155C13.7716 15.1124 14.3716 13.7055 14.3716 12.7651C14.3716 11.924 13.9218 11.2225 12.9862 11.2225C11.886 11.2225 11.0015 12.3591 11.0015 13.884C11.0015 14.8546 11.3296 15.5109 11.3296 15.5109C11.3296 15.5109 10.2439 20.104 10.0444 20.9591C9.94556 21.3812 9.91256 21.8812 9.90999 22.381C6.80856 20.8638 4.66683 17.6852 4.66683 14.0002C4.66683 8.84583 8.84583 4.66683 14.0002 4.66683Z" />
+			</svg>
+		</symbol>
+		<symbol id="link">
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+				<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+				<g id="SVGRepo_iconCarrier">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.975 14.51a1.05 1.05 0 0 0 0-1.485 2.95 2.95 0 0 1 0-4.172l3.536-3.535a2.95 2.95 0 1 1 4.172 4.172l-1.093 1.092a1.05 1.05 0 0 0 1.485 1.485l1.093-1.092a5.05 5.05 0 0 0-7.142-7.142L9.49 7.368a5.05 5.05 0 0 0 0 7.142c.41.41 1.075.41 1.485 0zm2.05-5.02a1.05 1.05 0 0 0 0 1.485 2.95 2.95 0 0 1 0 4.172l-3.5 3.5a2.95 2.95 0 1 1-4.171-4.172l1.025-1.025a1.05 1.05 0 0 0-1.485-1.485L3.87 12.99a5.05 5.05 0 0 0 7.142 7.142l3.5-3.5a5.05 5.05 0 0 0 0-7.142 1.05 1.05 0 0 0-1.485 0z">
+					</path>
+				</g>
+			</svg>
+		</symbol>
+	</svg>
+	<div class="wrapper">
+		<include src="@html/header/header-white.html"></include>
+		<main class="pt-38">
+			<div class="container pb-6">
+				<nav aria-label="Breadcrumb">
+					<ol class="flex items-center gap-3 whitespace-nowrap scroll-none overflow-x-auto -mx-4 px-4">
+						<li class="flex flex-row-reverse gap-3 items-center text-x icon-chevron before:!text-primary before:text-[8px] before:-rotate-90 _hover-link-accent"><a href="https://nickireland.com/">engagement-rings</a></li>
+						<li class="flex flex-row-reverse gap-3 items-center text-x icon-chevron before:!text-primary before:text-[8px] before:-rotate-90 _hover-link-accent"><a href="https://nickireland.com/">tension-set</a></li>
+						<li class="text-burgundy text-x" aria-current="page"><span>Curved Tension Set Diamond Engagement Ring</span></li>
+					</ol>
+				</nav>
+			</div>
+			<div class="container">
+				<div data-tabs class="tabs flex sm:gap-5">
+					<div class="tabs__content sm:basis-1/2" data-tabs-body>
+						<div class="tabs__image" data-tabs-item>
+							<img src="@img/gallery/image01.png" alt="image">
+						</div>
+						<div class="tabs__image _hidden" data-tabs-item>
+							<img src="@img/gallery/image02.png" alt="image">
+						</div>
+						<div class="tabs__image _hidden" data-tabs-item>
+							<img src="@img/gallery/image03.png" alt="image">
+						</div>
+						<div class="tabs__image _hidden" data-tabs-item>
+							<img class="!object-cover" src="@img/gallery/image04.png" alt="image">
+						</div>
+					</div>
+					<div class="tabs__preview-images scroll-none sm:basis-1/2 max-sm:hidden" data-tabs-targets>
+						<div class="tabs__preview-img _tab-active" data-tabs-target>
+							<img src="@img/gallery/image01.png" alt="image">
+						</div>
+						<div class="tabs__preview-img" data-tabs-target>
+							<img src="@img/gallery/image02.png" alt="image">
+						</div>
+						<div class="tabs__preview-img" data-tabs-target>
+							<img src="@img/gallery/image03.png" alt="image">
+						</div>
+						<div class="tabs__preview-img" data-tabs-target>
+							<img src="@img/gallery/image04.png" alt="image">
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="pt-8 pb-16 lg:pb-10 lg:pt-6">
+				<div class="container">
+					<div class="flex flex-col gap-14 lg:flex-row lg:grid lg:gap-5 lg:grid-cols-2">
+						<div class="flex flex-col gap-4 self-center lg:pe-5">
+							<h1 class="leading-title -tracking-4 text-balance font-secondary text-[44px] lg:text-[56px]">Curved Tension Set Diamond Engagement Ring – Rose Gold</h1>
+							<div class="flex flex-col" data-showmore data-showmore-media="767.98,max">
+								<div class="flex flex-col gap-4 leading-normal font-light text-gray" data-showmore-content="100">
+									<p>Elevate your style with the MDTdesign Split Band Diamond Tension Set Ring, handmade in 18ct Rose Gold. Featuring a stunning 0.90ct Round Brilliant Cut Diamond, securely held by the tension of the metal, this
+										ring is
+										enhanced with 34 accent diamonds on the split band, adding extra sparkle. A true testament to MDTdesign’s mastery in tension setting, this unique piece embodies innovation and bespoke craftsmanship, available
+										in
+										multiple metals to suit your style.</p>
+								</div>
+								<button class="mt-4" data-showmore-button type="button" aria-label="Read more">
+									<span class="btn-showmore !normal-case btn-showmore_more underline">Read more</span>
+									<span class="btn-showmore !normal-case btn-showmore_hide underline">Hide</span>
+								</button>
+							</div>
+						</div>
+						<div class="flex flex-col gap-3 sm:gap-4">
+							<div class="flex items-center gap-3 not-last:mb-4 sm:not-last:mb-2">
+								<span>From</span>
+								<div class="text-2xl"><span>$</span>4,398</div>
+							</div>
+							<div class="grid grid-cols-[20.5%_1fr_1fr] mobile-small:grid-cols-[20.5%_50.2%_1fr] items-end gap-4 not-last:mb-1 mobile-small:grid-cols-[30.5%_47.2%_1fr] sm:grid-cols-[17.5%_60%_1fr] 1xs:grid-cols-[17.5%_30%_1fr]">
+								<div class="flex flex-col items-start gap-5">
+									<span class="text-[10px] mobile-small:text-x uppercase">Ring size</span>
+									<select data-class-modif="size" name="size">
+										<option value="1" selected> 1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<div class="flex flex-col gap-5 max-mobile-small:col-span-2">
+									<span class="text-[10px] mobile-small:text-x uppercase">Ring Colour</span>
+									<select data-class-modif="ring-color" name="color">
+										<option data-asset="<i style='--opt-color:#D8A687'></i>" value="gold" selected>Rose Gold</option>
+										<option data-asset="<i style='--opt-color:#D9D9D9'></i>" value="silver">Rose Silver</option>
+										<option data-asset="<i style='--opt-color:#EDBE5F'></i>" value="pink">Rose Pink</option>
+										<option data-asset="<i style='--opt-color:#D8A687'></i>" value="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit cumque quis consectetur dolores atque rerum incidunt labore eum
+											rem similique.</option>
+									</select>
+								</div>
+								<button class="btn-add btn btn_transparent-dark w-full 1xs:!text-base flex items-center gap-2 max-mobile-small:col-span-3 overflow-hidden" data-add-to-enquiry-list type="button" aria-label="Add to Enquiry List">
+									<i aria-hidden="true">
+										<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none"
+												stroke="#3b3b3b" stroke-width="1" />
+										</svg>
+									</i>
+									<span class="max-1xs:hidden">
+										<span class="[.added_&]:hidden">Add to Enquiry List</span>
+										<span class="hidden [.added_&]:block">Added to enquiry list</span>
+									</span>
+								</button>
+							</div>
+							<a class="tex-x font-light me-auto underline not-last:mb-5 sm:not-last:mb-3 hover:no-underline" href="#">Find your size</a>
+							<a class="btn btn_xl btn_dark" href="#"><span>Buy now</span></a>
+							<div class="grid grid-cols-2 gap-2">
+								<a class="btn btn_big btn_transparent-dark" href="#"><span>Add to Bag</span></a>
+								<div class="btn btn_transparent-no-border"><a href="#">Send a hint</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="py-[72px] bg-burgundy">
+				<div class="container">
+					<div class="flex flex-col gap-6 md:gap-14">
+						<div class="flex flex-col gap-4 text-center text-white md:max-w-[1034px] md:mx-auto md:gap-5">
+							<h2 class="text-balance  leading-title font-secondary text-[44px] sm:text-[72px]">Love the design? Make it yours.</h2>
+							<div class="flex flex-col gap-6 leading-normal font-light md:gap-8">
+								<p>At MDTdesign, we understand that every person has their own unique story, which is why we offer a personalised service where can can tailor the design to your individual style and preferences.</p>
+								<p>You can personalise the following in this design:</p>
+							</div>
+						</div>
+						<ul class="grid  gap-6 sm:gap-y-10 gap-x-4 w-full mobile-small-xs:grid-cols-2 md:max-w-[860px] md:mx-auto md:grid-cols-4">
+							<li class="flex flex-col items-center gap-4 text-center text-white">
+								<div class="basis-10 w-10 h-10">
+									<img class="w-full h-full object-contain" src="@img/icons/diamond-white.svg" width="40" height="40" alt="diamond">
+								</div>
+								<h3 class="text-balance uppercase text-lg">Stone type</h3>
+							</li>
+							<li class="flex flex-col items-center gap-4 text-center text-white">
+								<div class="basis-10 w-10 h-10">
+									<img class="w-full h-full object-contain" src="@img/icons/diamond-2.svg" width="40" height="40" alt="diamond">
+								</div>
+								<h3 class="text-balance uppercase text-lg">Stone size</h3>
+							</li>
+							<li class="flex flex-col items-center gap-4 text-center text-white">
+								<div class="basis-10 w-10 h-10">
+									<img class="w-full h-full object-contain" src="@img/icons/metal-type.svg" width="40" height="40" alt="diamond">
+								</div>
+								<h3 class="text-balance uppercase text-lg">Metal type</h3>
+							</li>
+							<li class="flex flex-col items-center gap-4 text-center text-white">
+								<div class="basis-10 w-10 h-10">
+									<img class="w-full h-full object-contain" src="@img/icons/metal-color.svg" width="40" height="40" alt="diamond">
+								</div>
+								<h3 class="text-balance uppercase text-lg">Metal colour</h3>
+							</li>
+						</ul>
+						<div class="flex items-center justify-center flex-wrap gap-3 max-md:w-full">
+							<a class="btn btn_white !text-base md:w-[300px]" href="#"><span>Book an appointment</span></a>
+							<a class="btn btn_transparent !text-base md:w-[300px]" href=" #"><span>Book an appointment</span></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="pt-10 pb-20 md:pb-[100px] md:pt-14">
+				<div class="container">
+					<div class="flex flex-col gap-8">
+						<div class="flex flex-col gap-3 max-w-[706px]">
+							<h2 class="text-balance leading-title font-secondary text-[32px]">Shop the collection</h2>
+							<p class="font-light text-gray leading-normal">Masterfully crafted with only the finest of gems, our enduring designs will bring joy and sparkle to any occasion.</p>
+						</div>
+						<div class="swiper max-md:!overflow-visible" data-mobile="false" data-mobile-slider-products>
+							<ul class="md:!grid md:!grid-cols-2 lg:!grid-cols-4 md:!gap-y-20 md:!gap-x-4 swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="swiper" data-slider-products>
+										<div class="swiper-wrapper group">
+											<a href="#" class="swiper-slide flex flex-col gap-4">
+												<div class="relative block aspect-[346/330] group">
+													<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/01.png" alt="ring">
+												</div>
+												<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Split Band Diamond Tension Set Ring C1042</h3>
+											</a>
+											<a href="#" class="swiper-slide flex flex-col gap-4">
+												<div class="relative block aspect-[346/330] group">
+													<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/02.png" alt="ring">
+												</div>
+												<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Tension Set Engagement Ring with Pink Diamonds C950</h3>
+											</a>
+											<a href="#" class="swiper-slide flex flex-col gap-4">
+												<div class="relative block aspect-[346/330] group">
+													<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/03.png" alt="ring">
+												</div>
+												<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in Yellow Gold
+													C251</h3>
+											</a>
+											<a href="#" class="swiper-slide flex flex-col gap-4">
+												<div class="relative block aspect-[346/330] group">
+													<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/04.png" alt="ring">
+												</div>
+												<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in White Gold C251
+												</h3>
+											</a>
+										</div>
+										<div class="swiper-pagination swiper-products-pagination mt-5"></div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="swiper" data-slider-products>
+										<div class="swiper-wrapper group">
+											<a href="#" class="swiper-slide flex flex-col gap-4">
+												<div class="relative block aspect-[346/330] group">
+													<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/02.png" alt="ring">
+												</div>
+												<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Tension Set Engagement Ring with Pink Diamonds C950</h3>
+											</a>
+										</div>
+										<div class="swiper-pagination swiper-products-pagination mt-5"></div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="swiper" data-slider-products>
+										<div class="swiper-wrapper group">
+											<a href="#" class="swiper-slide flex flex-col gap-4">
+												<div class="relative block aspect-[346/330] group">
+													<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/03.png" alt="ring">
+												</div>
+												<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in Yellow Gold
+													C251</h3>
+											</a>
+											<a href="#" class="swiper-slide flex flex-col gap-4">
+												<div class="relative block aspect-[346/330] group">
+													<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/04.png" alt="ring">
+												</div>
+												<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in White Gold C251
+												</h3>
+											</a>
+											<a href="#" class="swiper-slide flex flex-col gap-4">
+												<div class="relative block aspect-[346/330] group">
+													<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/01.png" alt="ring">
+												</div>
+												<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Split Band Diamond Tension Set Ring C1042</h3>
+											</a>
+										</div>
+										<div class="swiper-pagination swiper-products-pagination mt-5"></div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="swiper" data-slider-products>
+										<div class="swiper-wrapper group">
+											<a href="#" class="swiper-slide flex flex-col gap-4">
+												<div class="relative block aspect-[346/330] group">
+													<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/04.png" alt="ring">
+												</div>
+												<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in White Gold C251
+												</h3>
+											</a>
+											<a href="#" class="swiper-slide flex flex-col gap-4">
+												<div class="relative block aspect-[346/330] group">
+													<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/02.png" alt="ring">
+												</div>
+												<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Tension Set Engagement Ring with Pink Diamonds C950</h3>
+											</a>
+											<a href="#" class="swiper-slide flex flex-col gap-4">
+												<div class="relative block aspect-[346/330] group">
+													<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/03.png" alt="ring">
+												</div>
+												<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in Yellow Gold
+													C251</h3>
+											</a>
+										</div>
+										<div class="swiper-pagination swiper-products-pagination mt-5"></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="pt-8 pb-16 lg:pb-10 lg:pt-6">
+				<div class="container">
+					<div class="grid lg:flex-row gap-12 md:gap-[54px] md:grid-cols-2">
+						<div class="flex flex-col gap-5 md:max-w-[575px] md:mx-auto">
+							<h2 class="leading-title -tracking-4 font-secondary text-[32px] md:text-[44px] lg:text-[56px]">Select Online. <br> Experience In-Person.</h2>
+							<div class="flex flex-col gap-4 leading-normal font-light">
+								<p>Add your favourite pieces to your Wishlist, and we will have them ready for you to view and try on during your appointment.</p>
+							</div>
+						</div>
+						<div class="flex flex-col gap-8 md:max-w-[565px] md:mx-auto md:w-full">
+							<div class="text-[12px] mobile-small:text-x uppercase text-center tracking-widest"><span>0</span> products added to your Enquiry List</div>
+							<div class="flex flex-col gap-2">
+								<button class="btn-add btn btn_transparent-dark w-full 1xs:!text-base flex items-center gap-2 max-mobile-small:col-span-3 overflow-hidden" data-add-to-enquiry-list type="button" aria-label="Add to Enquiry List">
+									<i aria-hidden="true">
+										<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none"
+												stroke="#3b3b3b" stroke-width="1" />
+										</svg>
+									</i>
+									<span>
+										<span class="[.added_&]:hidden">Add to Enquiry List</span>
+										<span class="hidden [.added_&]:block">Added to enquiry list</span>
+									</span>
+								</button>
+								<a class="btn btn_big btn_dark" href="#"><span>Book an appointment</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="flex flex-col bg-biege-25 lg:flex-row lg:min-h-[382px]">
+					<div class="md:basis-1/2 flex flex-col justify-center px-5 1xl:px-10 pt-12 pb-16 lg:py-[67px] nth-[1]:lg:ms-auto nth-[2]:lg:me-auto lg:max-w-[756px]">
+						<ul class="grid items-center justify-center gap-y-16 gap-x-4 md:grid-cols-2 1xl:gap-10">
+							<li class="flex flex-col items-center text-center md:h-full">
+								<div class="mx-auto mb-4">
+									<img class="basis-6 w-6 h-6 object-contain" src="@img/icons/check.svg" width="24" height="24" alt="check">
+								</div>
+								<h5 class="text-xl tracking-4 leading-title mb-8 md:mb-10">Lifetime Manufacture Warranty</h5>
+								<a class="btn btn_arrow 1xl:!px-11 !text-lg  btn_transparent-dark mt-auto" href="#"><span class="icon-arrow">Learn more</span></a>
+							</li>
+							<li class="flex flex-col items-center text-center md:h-full">
+								<div class="mx-auto mb-4">
+									<img class="basis-6 w-6 h-6 object-contain" src="@img/icons/dollar.svg" width="24" height="24" alt="dollar">
+								</div>
+								<h5 class="text-xl tracking-4 leading-title mb-8 md:mb-10">14 day money-back guarantee</h5>
+								<a class="btn btn_arrow 1xl:!px-11 !text-lg  btn_transparent-dark mt-auto" href="#"><span class="icon-arrow">Learn more</span></a>
+							</li>
+						</ul>
+					</div>
+					<div class="md:basis-1/2 relative z-10 flex flex-col items-center justify-center nth-[1]:lg:ms-auto nth-[2]:lg:me-auto lg:max-w-[756px]">
+						<div class="flex flex-col gap-5 justify-center max-md:min-h-[382px]  py-10 px-10 md:px-[10%] z-10">
+							<h2 class="text-balance leading-title text-white font-secondary text-[32px] x:text-[44px] lg:text-[56px]">Find your ring size</h2>
+							<div class="grid gap-3 text-white font-light leading-6">
+								<p>
+									At MDTdesign, we understand that every person has their own unique story, which is why we offer a personalised service where can can tailor the design to your individual style and preferences.
+								</p>
+							</div>
+							<a class="btn btn_primary-text btn_big btn_white last:mt-[18px]  md:last:mt-9 !px-8" href="#">
+								<span>FIND YOUR SIZE</span>
+							</a>
+						</div>
+						<div class="absolute inset-0 w-full h-full">
+							<picture>
+								<source media="(max-width: 479.98px)" srcset="@img/image-mobile.jpg" type="image/jpg">
+								<img class="w-full h-full object-cover" src="@img/image.jpg" width="756" height="560" alt="kitchen">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="flex flex-col-reverse bg-biege-25 lg:flex-row lg:min-h-[507px]">
+					<div class="basis-1/2 relative max-lg:pb-[82.56%]">
+						<img class="absolute top-0 left-0 w-full h-full object-cover" src="@img/worker.jpg" width="756" height="507" alt="worker">
+					</div>
+					<div class="basis-1/2 flex flex-col justify-center px-5 lg:px-10 pt-12 pb-16 lg:max-w-[756px] lg:py-[67px]">
+						<div class="flex gap-6 flex-col justify-center">
+							<h2 class="text-[32px] leading-title font-secondary md:text-[56px]">Details & Material</h2>
+							<div class="flex flex-col gap-5 font-light leading-snug list-default">
+								<p>Lorem ipsum dolor sit amet consectetur. Volutpat neque quam neque consequat enim quis tellus suspendisse. </p>
+								<ul>
+									<li>Dignissim dictum at sit nulla dui viverra consequat. Enim amet neque in porta sagittis. Turpis integer sit risus</li>
+									<li>Mac proin sed tortor. Placerat enim vitae aliquam ornare lorer.</li>
+									<li>Feugiat erat commodo in aliquam. Fermentum tempor faucibus quis dapibus. Accumsan sit turpis vul.</li>
+									<li>Ante in id amet nulla commodo. At vitae tempor mattis scelerisque non est imperdiet viverra. Nisl dictum in ante elit venenatis aliquam semper.</li>
+								</ul>
+								<p>Facilisis congue enim cursus id nibh semper dolor scelerisque. Suspendisse vivamus amet ut in duis. Senectus a mauris quis leo malesuada est.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bg-accent pt-12 pb-16 md:pt-16 md:pb-[72px]">
+				<div class="container">
+					<div class="grid items-start lg:grid-cols-2 gap-[60px] lg:gap-16">
+						<div class="grid gap-8">
+							<div class="flex flex-col gap-5 sm:gap-10 sm:flex-row sm:justify-between">
+								<div class="flex items-start gap-[18px] max-sm:justify-between sm:flex-col">
+									<h2 class="text-balance leading-title font-secondary text-[32px] sm:text-[56px]">Reviews</h2>
+									<a class="btn btn_transparent-dark max-mobile-small-xs:!px-5 max-sm:!px-9 max-sm:!w-auto sm:w-full" href="#">Leave a review</a>
+								</div>
+								<div class="flex gap-5 max-sm:items-center max-sm:justify-between sm:text-center sm:flex-col">
+									<div class="flex gap-3 sm:gap-1 sm:flex-col">
+										<div class="text-[32px] sm:text-[40px] font-secondary">5/5</div>
+										<div class="flex gap-0.5 items-center">
+											<div class="basis-6 w-6 h-6">
+												<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+											</div>
+											<div class="basis-6 w-6 h-6">
+												<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+											</div>
+											<div class="basis-6 w-6 h-6">
+												<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+											</div>
+											<div class="basis-6 w-6 h-6">
+												<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+											</div>
+											<div class="basis-6 w-6 h-6">
+												<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+											</div>
+										</div>
+									</div>
+									<span class="text-x tracking-widest uppercase leading-title not-last:mb-1">3 reviews</span>
+								</div>
+							</div>
+							<div class="grid gap-5">
+								<div class="flex items-center gap-6">
+									<span class="text-2xl">5</span>
+									<div class="bg-white w-full h-6 relative">
+										<div class="absolute top-0 left-0 h-full bg-burgundy w-full"></div>
+									</div>
+								</div>
+								<div class="flex items-center gap-6">
+									<span class="text-2xl">4</span>
+									<div class="bg-white w-full h-6 relative">
+										<div class="absolute top-0 left-0 h-full bg-burgundy"></div>
+									</div>
+								</div>
+								<div class="flex items-center gap-6">
+									<span class="text-2xl">3</span>
+									<div class="bg-white w-full h-6 relative">
+										<div class="absolute top-0 left-0 h-full bg-burgundy"></div>
+									</div>
+								</div>
+								<div class="flex items-center gap-6">
+									<span class="text-2xl">2</span>
+									<div class="bg-white w-full h-6 relative">
+										<div class="absolute top-0 left-0 h-full bg-burgundy"></div>
+									</div>
+								</div>
+								<div class="flex items-center gap-6">
+									<span class="text-2xl">1</span>
+									<div class="bg-white w-full h-6 relative">
+										<div class="absolute top-0 left-0 h-full bg-burgundy"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="min-w-0 lg:py-8 lg:px-4">
+							<div class="swiper" data-slider-reviews>
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="flex flex-col gap-4 lg:gap-6">
+											<div class="flex items-start gap-5 justify-between">
+												<div class="flex flex-col gap-3">
+													<div class="flex flex-col gap-2 sm:items-center sm:flex-row sm:gap-3">
+														<h5 class="text-xl tracking-4">Caroline E.</h5>
+														<span class="text-x tracking-widest uppercase ">Verified buyer</span>
+													</div>
+													<div class="flex gap-0.5 items-center">
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+													</div>
+												</div>
+												<time class="text-x font-light" datetime="2024-02-15">15 February 2024</time>
+											</div>
+											<blockquote class="text-xl font-light tracking-wide">Lorem ipsum dolor sit amet consectetur. Dolor consequat iaculis suspendisse urna dolor. Cras eget sed iaculis eleifend vitae. Orci vitae tempor tortor
+												urna sen. Poreget sed
+												iaculis eleifend
+												vitae. Orci vitae tempor tortor urna seectus vitae diam amet mernt.
+											</blockquote>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="flex flex-col gap-4 lg:gap-6">
+											<div class="flex items-start gap-5 justify-between">
+												<div class="flex flex-col gap-3">
+													<div class="flex flex-col gap-2 sm:items-center sm:flex-row sm:gap-3">
+														<h5 class="text-xl tracking-4">Bree Smith</h5>
+														<span class="text-x tracking-widest uppercase ">Verified buyer</span>
+													</div>
+													<div class="flex gap-0.5 items-center">
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+													</div>
+												</div>
+												<time class="text-x font-light" datetime="2024-02-15">15 February 2024</time>
+											</div>
+											<blockquote class="text-xl font-light tracking-wide">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, nesciunt vitae ipsa esse necessitatibus cum accusantium aut id nam unde aliquid,
+												facere nostrum voluptate placeat itaque? Deserunt exercitationem quas numquam modi sed reprehenderit at, qui esse dicta inventore id minus enim, cupiditate voluptate eligendi similique illo accusantium
+												pariatur, fugit nobis.
+											</blockquote>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="flex flex-col gap-4 lg:gap-6">
+											<div class="flex items-start gap-5 justify-between">
+												<div class="flex flex-col gap-3">
+													<div class="flex flex-col gap-2 sm:items-center sm:flex-row sm:gap-3">
+														<h5 class="text-xl tracking-4">Marta</h5>
+														<span class="text-x tracking-widest uppercase ">Verified buyer</span>
+													</div>
+													<div class="flex gap-0.5 items-center">
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+													</div>
+												</div>
+												<time class="text-x font-light" datetime="2024-02-15">15 February 2024</time>
+											</div>
+											<blockquote class="text-xl font-light tracking-wide">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, nesciunt vitae ipsa esse necessitatibus cum accusantium aut id nam unde aliquid,
+												facere nostrum voluptate placeat itaque? Deserunt exercitationem quas numquam modi sed reprehenderit at, qui esse dicta inventore id minus enim, cupiditate voluptate eligendi similique illo accusantium
+												pariatur, fugit nobis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, voluptatum. Commodi hic explicabo unde eos quae veritatis dolore ea repellat aliquid suscipit iste eveniet, vero
+												quasi at libero molestiae? Odit, esse quas. Quae placeat praesentium laudantium blanditiis? Natus vel temporibus mollitia quia porro necessitatibus eum. Incidunt vero asperiores aliquid qui?
+											</blockquote>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="flex flex-col gap-4 lg:gap-6">
+											<div class="flex items-start gap-5 justify-between">
+												<div class="flex flex-col gap-3">
+													<div class="flex flex-col gap-2 sm:items-center sm:flex-row sm:gap-3">
+														<h5 class="text-xl tracking-4">Artur</h5>
+														<span class="text-x tracking-widest uppercase ">Verified buyer</span>
+													</div>
+													<div class="flex gap-0.5 items-center">
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+														<div class="basis-6 w-6 h-6">
+															<img class="w-full h-full object-contain" src="@img/icons/star.svg" alt="star">
+														</div>
+													</div>
+												</div>
+												<time class="text-x font-light" datetime="2024-02-15">15 February 2024</time>
+											</div>
+											<blockquote class="text-xl font-light tracking-wide">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, nesciunt vitae ipsa esse necessitatibus cum
+											</blockquote>
+										</div>
+									</div>
+								</div>
+								<div class="flex justify-center items-center gap-10 lg:justify-start lg:gap-6 mt-10 lg:mt-24">
+									<button
+										class="w-10 h-10 basis-10 lg:basis-7 lg:w-7 lg:h-7 bg-transparent text-x border border-primary rounded-full flex items-center rotate-180 justify-center icon-chevron-light cursor-pointer hover:bg-primary hover:text-white transition-colors duration-300 relative [&.swiper-button-disabled]:pointer-events-none [&.swiper-button-disabled]:opacity-50"
+										type="button" aria-label="the previous review" data-prev-slide>
+									</button>
+									<button
+										class="w-10 h-10 basis-10 lg:basis-7 lg:w-7 lg:h-7 bg-transparent text-x border border-primary rounded-full flex items-center justify-center icon-chevron-light cursor-pointer hover:bg-primary hover:text-white transition-colors duration-300 relative [&.swiper-button-disabled]:pointer-events-none [&.swiper-button-disabled]:opacity-50"
+										type="button" aria-label="the previous review" data-next-slide>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="relative z-10 flex flex-col items-center justify-center md:min-h-[560px]">
+					<div class="container !max-w-[700px] py-10">
+						<div class="flex flex-col gap-5 justify-center text-center items-center max-md:min-h-[560px] py-10">
+							<div class="uppercase text-white text-x tracking-widest">Love at first sight guarantee</div>
+							<h2 class="text-balance leading-title text-center text-white font-secondary text-[44px] x:text-[44px] lg:text-7xl">Talk to our experts</h2>
+							<div class="grid gap-3 text-white leading-6">
+								<p>
+									Lorem ipsum dolor sit amet consectetur. Euismod nisl sed adipiscing diam. Pellentesque adipiscing ullamcorper mattis senectus tortor.
+								</p>
+							</div>
+							<a class="btn btn_white last:mt-9 !px-8" href="#">
+								<span>Book an appointment</span>
+							</a>
+						</div>
+					</div>
+					<div class="absolute inset-0 w-full h-full gradient-img before:bg-black/43 -z-10">
+						<img class="w-full h-full object-cover" src="@img/kitchen.jpg" width="756" height="560" alt="kitchen">
+					</div>
+				</div>
+			</section>
+		</main>
+		<include src="@html/footer/footer.html"></include>
+	</div>
+	<include src="@html/modals/modal.html"></include>
+</body>
+
+</html>

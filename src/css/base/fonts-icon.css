@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "icons";
+  src: url("/icons.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*="icon-"] {
+  &::before {
+    font-family: "icons";
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+:root {
+  --icon-arrow: "\ea01";
+  --icon-bag: "\ea02";
+  --icon-check: "\ea03";
+  --icon-chevron-light: "\ea04";
+  --icon-chevron: "\ea05";
+  --icon-close: "\ea06";
+  --icon-dislike: "\ea07";
+  --icon-filter: "\ea08";
+  --icon-heart: "\ea09";
+  --icon-like: "\ea0a";
+  --icon-mail: "\ea0b";
+  --icon-message: "\ea0c";
+  --icon-phone: "\ea0d";
+  --icon-play: "\ea0e";
+  --icon-search: "\ea0f";
+  --icon-shop: "\ea10";
+}
+
+.icon-arrow::before {
+  content: var(--icon-arrow);
+}
+.icon-bag::before {
+  content: var(--icon-bag);
+}
+.icon-check::before {
+  content: var(--icon-check);
+}
+.icon-chevron-light::before {
+  content: var(--icon-chevron-light);
+}
+.icon-chevron::before {
+  content: var(--icon-chevron);
+}
+.icon-close::before {
+  content: var(--icon-close);
+}
+.icon-dislike::before {
+  content: var(--icon-dislike);
+}
+.icon-filter::before {
+  content: var(--icon-filter);
+}
+.icon-heart::before {
+  content: var(--icon-heart);
+}
+.icon-like::before {
+  content: var(--icon-like);
+}
+.icon-mail::before {
+  content: var(--icon-mail);
+}
+.icon-message::before {
+  content: var(--icon-message);
+}
+.icon-phone::before {
+  content: var(--icon-phone);
+}
+.icon-play::before {
+  content: var(--icon-play);
+}
+.icon-search::before {
+  content: var(--icon-search);
+}
+.icon-shop::before {
+  content: var(--icon-shop);
+}

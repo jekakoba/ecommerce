@@ -1,0 +1,47 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "ISC",
+  "keywords": [
+    "tailwindcss",
+    "wordpress",
+    "ui"
+  ],
+  "author": "FrontElf",
+  "scripts": {
+    "dev": "node ./plugins/generateAliases.js && vite dev",
+    "prod": "vite build",
+    "preview": "vite preview",
+    "aliases": "node ./plugins/generateAliases.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "js-cookie": "^3.0.5",
+    "lightgallery": "^2.8.3",
+    "postcss": "^8.5.3",
+    "posthtml-beautify": "^0.7.0",
+    "prettier": "^3.3.3",
+    "process": "^0.11.10",
+    "sass-embedded": "1.78.0",
+    "swiper": "^11.2.6"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.17",
+    "@tailwindcss/vite": "^4.0.17",
+    "@vimeo/player": "^2.26.0",
+    "@vituum/vite-plugin-posthtml": "^1.1.0",
+    "counterup2": "^2.0.2",
+    "gsap": "^3.12.5",
+    "posthtml": "^0.16.6",
+    "posthtml-expressions": "^1.11.4",
+    "tailwindcss": "^4.0.17",
+    "vimeo": "^2.3.1",
+    "vite": "^5.4.10",
+    "vituum": "^1.2.0"
+  },
+  "resolutions": {
+    "rollup": "npm:@rollup/wasm-node@latest"
+  }
+}

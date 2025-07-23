@@ -1,0 +1,33 @@
+.modal {
+  @apply fixed inset-0 opacity-0 w-full h-full pointer-events-none bg-white z-[100];
+}
+
+.modal .container {
+  @apply basis-auto max-h-full;
+}
+
+.modal.is-open {
+  @apply opacity-100 pointer-events-auto visible;
+}
+
+.modal__overlay {
+  @apply fixed top-0 left-0 flex flex-col w-full h-full bg-white z-[100] pt-36  sm:pt-[153px];
+}
+.scrolled-page .modal__overlay {
+  @apply max-sm:pt-25;
+}
+.modal__content {
+  @apply flex flex-col;
+}
+
+.box-shadow-class {
+  @apply relative;
+}
+.box-shadow-class::before {
+  @apply content-[''] absolute bottom-[-9px] left-0 w-full h-[10px] z-[2];
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}

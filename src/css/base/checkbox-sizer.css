@@ -1,0 +1,44 @@
+.checkbox-sizer {
+  @apply flex flex-col flex-wrap  justify-center sm:flex-row  sm:items-center;
+}
+
+.checkbox-sizer__item {
+  @apply py-2 px-5 flex items-center justify-center min-h-12 border border-gray cursor-pointer sm:w-[216px];
+}
+
+.checkbox-sizer__item input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.checkbox-sizer__item:hover {
+  @apply bg-primary text-white transition-colors duration-300;
+}
+.checkbox-sizer__item:hover .checkbox-sizer__icon svg path {
+  @apply transition-colors duration-300 ease-in-out;
+  fill: white;
+}
+
+.checkbox-sizer__item:has(input:checked) {
+  @apply bg-primary text-white;
+}
+
+.checkbox-sizer__item:has(input:checked) .checkbox-sizer__icon svg path {
+  fill: white;
+}
+
+.checkbox-sizer__text-wrapper {
+  @apply flex items-center gap-[6px];
+}
+.checkbox-sizer__text {
+  @apply font-sans leading-btn uppercase;
+}
+.checkbox-sizer__icon {
+  @apply w-6 h-6 flex items-center justify-center basis-6 shrink-0;
+}
+
+.checkbox-sizer__icon svg {
+  @apply w-6 h-6;
+}

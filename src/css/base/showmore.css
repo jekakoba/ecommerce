@@ -1,0 +1,11 @@
+[data-showmore-button] span:last-child {
+  @apply hidden;
+}
+
+[data-showmore-button]._showmore-active span {
+  @apply hidden;
+}
+
+[data-showmore-button]._showmore-active span:last-child {
+  @apply block;
+}

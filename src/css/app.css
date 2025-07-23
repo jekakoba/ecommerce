@@ -1,0 +1,51 @@
+/**
+ * Wolf Digital Tailwind CSS Boilerplate
+ * Main CSS Index File
+ *
+ * This file serves as the main entry point for all CSS styles.
+ * It imports Tailwind CSS and all our component files.
+ */
+
+/* Import Tailwind CSS v4 */
+@import "tailwindcss";
+@import "./base/global.css";
+
+/* Base Styles */
+@import "./base/variables.css";
+@import "./base/typography.css";
+@import "./base/fonts.css";
+@import "./base/fonts-icon";
+@import "./base/icons.css";
+@import "./base/animations.css";
+@import "./base/checkbox-sizer.css";
+
+/* Components */
+@import "./components/btn.css";
+@import "./components/spoiler.css";
+@import "./components/swiper.css";
+@import "./components/steps.css";
+@import "./components/select.css";
+
+/*============ Tabs ========= */
+
+@import "./components/tabs.css";
+@import "./components/tabs-contact.css";
+@import "./components/tabs-products.css";
+
+/* @import "./components/blog-list.css"; */
+/* @import "./components/video.css"; */
+/* @import "./components/progress-bar.css"; */
+/* @import "./components/section.css"; */
+/* @import "./components/accordion.css"; */
+/* @import "./components/lightgallery-bundle.min.css"; */
+/* @import "./components/lightgallery"; */
+
+/* Block Styles */
+@import "../htmls/header/header.css";
+@import "../htmls/modals/modal.css";
+
+/**
+ * Custom styles that don't fit elsewhere can be added below.
+ * For larger projects, consider creating additional component files
+ * and importing them above.
+ */

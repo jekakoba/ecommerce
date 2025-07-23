@@ -1,0 +1,43 @@
+.tabs__content {
+  @apply relative aspect-square max-sm:hidden;
+}
+
+.tabs__body {
+  @apply relative;
+}
+
+.tabs__image {
+  @apply absolute w-full h-full top-0 left-0 transition-opacity overflow-hidden  duration-300 rounded-xl;
+}
+
+.tabs__image img {
+  @apply absolute w-full h-full top-0 left-0 object-scale-down  overflow-hidden;
+}
+
+.tabs__image._hidden {
+  @apply sm:opacity-0 sm:pointer-events-none;
+}
+
+.tabs__preview-images {
+  @apply sm:grid sm:grid-cols-2 gap-y-6 gap-x-4 flex max-sm:overflow-x-auto max-sm:snap-x snap-mandatory max-sm:-mx-4 max-sm:px-4;
+}
+
+.tabs__preview-img {
+  @apply sm:cursor-pointer relative transition-colors duration-300 rounded-xl overflow-hidden aspect-square max-sm:w-[80.2vw] max-lg:flex-none max-sm:only:flex-auto max-sm:only:basis-full max-sm:snap-center;
+}
+
+.tabs__preview-img img {
+  @apply w-full h-full object-scale-down sm:will-change-transform sm:transition-transform sm:duration-1000;
+}
+
+.tabs__preview-img:hover img {
+  @apply sm:scale-102;
+}
+
+.tabs__preview-img._tab-active {
+  @apply sm:bg-gray-200;
+}
+
+.tabs__preview-img._tab-active img {
+  @apply sm:scale-100;
+}

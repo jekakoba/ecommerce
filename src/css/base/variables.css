@@ -1,0 +1,60 @@
+@theme {
+  --font-primary: "HelveticaNeueRoman";
+  --font-secondary: "Baskervville";
+
+  --text-x: 0.875rem;
+  --text-main: 7.6875rem;
+  --color-primary: #3b3b3b;
+
+  --color-btn-dark: #3b3b3b;
+  --color-btn-light: #f6f3ef;
+
+  --color-burgundy: #8a3740;
+  --color-biege-25: #f6f3ef;
+
+  --color-accent: #dbcfbd;
+  --color-gray: #6c6c6c;
+
+  --color-border-gray: rgba(108, 108, 108, 0.2);
+
+  --color-ring-gold: #edbe5f;
+  --color-ring-silver: #d9d9d9;
+  --color-ring-split: #d8a687;
+
+  --color-hover-link: #dbcfbd;
+  --color-hover-link-accent: #8a3740;
+
+  --bg-dark-gradient: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+
+  --breakpoint-x: 30rem;
+  --breakpoint-1xl: 93.75rem;
+  --breakpoint-1xs: 86.25rem;
+  --breakpoint-template: 94.5rem;
+  --breakpoint-mobile-small: 26.875rem;
+  --breakpoint-mobile-small-xs: 23.4375rem;
+
+  --spacing-title: 1.1;
+  --spacing-btn: 1.2;
+  --spacing-title-small: 1.05;
+  --tracking-5: 0.08em;
+  --tracking-4-: -0.04em;
+  --tracking-4: 0.04em;
+
+  --icon-arrow: "\ea01";
+  --icon-bag: "\ea02";
+  --icon-check: "\ea03";
+  --icon-chevron-light: "\ea04";
+  --icon-chevron: "\ea05";
+  --icon-close: "\ea06";
+  --icon-filter: "\ea07";
+  --icon-heart: "\ea08";
+  --icon-mail: "\ea09";
+  --icon-phone: "\ea0a";
+  --icon-play: "\ea0b";
+  --icon-search: "\ea0c";
+  --icon-shop: "\ea0d";
+}

@@ -1,0 +1,51 @@
+.steps {
+  @apply grid grid-cols-3 items-center justify-center gap-11 mobile-small:gap-18 max-mobile-small:w-full;
+}
+.steps__item {
+  @apply flex justify-center items-center flex-col gap-5;
+}
+.active-step .steps__item {
+  @apply flex;
+}
+
+.steps__item {
+  @apply relative;
+}
+
+.steps__item:not(:last-child)::after {
+  @apply content-[''] absolute top-[25px] translate-x-full right-0 w-1/2 h-1 bg-[#b5b5b5] rounded-l;
+}
+.steps__item:not(:first-child)::before {
+  @apply content-[''] absolute top-[25px] -translate-x-full left-0 w-1/2 h-1 bg-[#b5b5b5] rounded-r;
+}
+
+.steps__number {
+  @apply font-sans basis-[50px] w-[50px] h-[50px] flex  items-center justify-center rounded-full bg-gray text-white text-xl;
+}
+
+.steps__value {
+  @apply uppercase text-gray leading-title text-center tracking-widest text-x;
+}
+
+.steps__item:nth-child(1) .steps__number,
+.step-2 .steps__item:nth-child(2) .steps__number,
+.step-3 .steps__item:nth-child(2) .steps__number,
+.step-3 .steps__item:nth-child(3) .steps__number {
+  @apply bg-burgundy;
+}
+
+.steps__item:nth-child(1) .steps__value,
+.step-2 .steps__item:nth-child(2) .steps__value,
+.step-3 .steps__item:nth-child(2) .steps__value,
+.step-3 .steps__item:nth-child(3) .steps__value {
+  @apply text-primary;
+}
+
+.step-2 .steps__item:nth-child(1)::after,
+.step-2 .steps__item:nth-child(2)::before,
+.step-3 .steps__item:nth-child(1)::after,
+.step-3 .steps__item:nth-child(2)::before,
+.step-3 .steps__item:nth-child(2)::after,
+.step-3 .steps__item:nth-child(3)::before {
+  @apply bg-burgundy;
+}

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Education post</title>
+	<!-- Vite will process and inject CSS from this JavaScript entry point -->
+	<script type="module" src="/src/js/app.js"></script>
+	<include src="@html/fonts.html"></include>
+	<!-- Add a link to the CSS file directly as well for better browser caching -->
+	<link rel="stylesheet" href="/src/css/app.css">
+</head>
+
+<body class="font-primary text-primary leading-tight">
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol id="facebook">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 21">
+				<g clip-path="url(#clip0_2212_4485)">
+					<path
+						d="M3.05277 21V11.1462H0.5V7.59835H3.05277V4.56802C3.05277 2.18677 4.5607 0 8.03529 0C9.4421 0 10.4824 0.137655 10.4824 0.137655L10.4004 3.45074C10.4004 3.45074 9.33949 3.4402 8.18178 3.4402C6.92879 3.4402 6.72804 4.02956 6.72804 5.00776V7.59835H10.5L10.3359 11.1462H6.72804V21H3.05277Z" />
+				</g>
+				<defs>
+					<clipPath id="clip0_2212_4485">
+						<rect width="10" height="21" fill="white" transform="translate(0.5)" />
+					</clipPath>
+				</defs>
+			</svg>
+		</symbol>
+		<symbol id="instagram">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20">
+				<g clip-path="url(#clip0_2212_4487)">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M6.45103 0.237639C7.49835 0.189425 7.83228 0.178711 10.5001 0.178711C13.168 0.178711 13.5019 0.190318 14.5484 0.237639C15.5948 0.284961 16.3091 0.451925 16.9341 0.693889C17.5885 0.941211 18.1823 1.32782 18.6734 1.82782C19.1734 2.318 19.5591 2.91085 19.8055 3.56621C20.0484 4.19121 20.2144 4.9055 20.2626 5.95014C20.3109 6.99925 20.3216 7.33318 20.3216 10.0001C20.3216 12.668 20.31 13.0019 20.2626 14.0492C20.2153 15.0939 20.0484 15.8082 19.8055 16.4332C19.5591 17.0886 19.1727 17.6825 18.6734 18.1734C18.1823 18.6734 17.5885 19.0591 16.9341 19.3055C16.3091 19.5484 15.5948 19.7144 14.5501 19.7626C13.5019 19.8109 13.168 19.8216 10.5001 19.8216C7.83228 19.8216 7.49835 19.81 6.45103 19.7626C5.40639 19.7153 4.6921 19.5484 4.0671 19.3055C3.41168 19.059 2.81784 18.6727 2.32693 18.1734C1.82726 17.6829 1.4406 17.0893 1.19389 16.4341C0.951925 15.8091 0.785854 15.0948 0.737639 14.0501C0.689425 13.001 0.678711 12.6671 0.678711 10.0001C0.678711 7.33228 0.690318 6.99835 0.737639 5.95193C0.784961 4.9055 0.951925 4.19121 1.19389 3.56621C1.44096 2.91093 1.82792 2.31738 2.32782 1.82693C2.81803 1.32737 3.41128 0.940714 4.06621 0.693889C4.69121 0.451925 5.4055 0.285854 6.45014 0.237639H6.45103ZM14.4689 2.0055C13.4332 1.95818 13.1225 1.94835 10.5001 1.94835C7.87782 1.94835 7.5671 1.95818 6.53139 2.0055C5.57335 2.04925 5.05371 2.20907 4.70728 2.34389C4.24925 2.52246 3.92157 2.73407 3.57782 3.07782C3.25197 3.39483 3.00119 3.78075 2.84389 4.20728C2.70907 4.55371 2.54925 5.07335 2.5055 6.03139C2.45818 7.0671 2.44835 7.37782 2.44835 10.0001C2.44835 12.6225 2.45818 12.9332 2.5055 13.9689C2.54925 14.9269 2.70907 15.4466 2.84389 15.793C3.00103 16.2189 3.25193 16.6055 3.57782 16.9225C3.89478 17.2484 4.28139 17.4992 4.70728 17.6564C5.05371 17.7912 5.57335 17.951 6.53139 17.9948C7.5671 18.0421 7.87692 18.0519 10.5001 18.0519C13.1234 18.0519 13.4332 18.0421 14.4689 17.9948C15.4269 17.951 15.9466 17.7912 16.293 17.6564C16.751 17.4778 17.0787 17.2662 17.4225 16.9225C17.7484 16.6055 17.9992 16.2189 18.1564 15.793C18.2912 15.4466 18.451 14.9269 18.4948 13.9689C18.5421 12.9332 18.5519 12.6225 18.5519 10.0001C18.5519 7.37782 18.5421 7.0671 18.4948 6.03139C18.451 5.07335 18.2912 4.55371 18.1564 4.20728C17.9778 3.74925 17.7662 3.42157 17.4225 3.07782C17.1054 2.75199 16.7195 2.50122 16.293 2.34389C15.9466 2.20907 15.4269 2.04925 14.4689 2.0055ZM9.24568 13.0278C9.94626 13.3195 10.7264 13.3588 11.4528 13.1392C12.1791 12.9195 12.8067 12.4545 13.2284 11.8236C13.65 11.1926 13.8395 10.4348 13.7645 9.6797C13.6895 8.92455 13.3546 8.21887 12.8171 7.68318C12.4745 7.34074 12.0602 7.07854 11.604 6.91545C11.1479 6.75236 10.6612 6.69243 10.1792 6.73997C9.69707 6.78752 9.23153 6.94137 8.81604 7.19043C8.40055 7.4395 8.04545 7.77759 7.7763 8.18036C7.50716 8.58314 7.33067 9.04058 7.25953 9.51975C7.18839 9.99892 7.22438 10.4879 7.36491 10.9515C7.50543 11.4151 7.747 11.8418 8.07221 12.2008C8.39743 12.5598 8.7982 12.8423 9.24568 13.0278ZM6.9305 6.4305C7.39927 5.96172 7.95578 5.58987 8.56826 5.33618C9.18074 5.08248 9.8372 4.9519 10.5001 4.9519C11.1631 4.9519 11.8195 5.08248 12.432 5.33618C13.0445 5.58987 13.601 5.96172 14.0698 6.4305C14.5386 6.89927 14.9104 7.45578 15.1641 8.06826C15.4178 8.68074 15.5484 9.3372 15.5484 10.0001C15.5484 10.6631 15.4178 11.3195 15.1641 11.932C14.9104 12.5445 14.5386 13.101 14.0698 13.5698C13.1231 14.5165 11.839 15.0484 10.5001 15.0484C9.16126 15.0484 7.87722 14.5165 6.9305 13.5698C5.98377 12.6231 5.4519 11.339 5.4519 10.0001C5.4519 8.66126 5.98377 7.37722 6.9305 6.4305ZM16.668 5.70371C16.7842 5.59413 16.8772 5.46235 16.9415 5.31619C17.0058 5.17002 17.0401 5.01243 17.0425 4.85276C17.0448 4.69308 17.0151 4.53456 16.955 4.38658C16.895 4.2386 16.8059 4.10417 16.693 3.99125C16.58 3.87832 16.4456 3.78921 16.2976 3.72917C16.1497 3.66914 15.9911 3.6394 15.8315 3.64173C15.6718 3.64406 15.5142 3.6784 15.368 3.74273C15.2219 3.80705 15.0901 3.90005 14.9805 4.01621C14.7674 4.24213 14.6507 4.54221 14.6552 4.85276C14.6598 5.1633 14.7851 5.45985 15.0047 5.67946C15.2244 5.89907 15.5209 6.02445 15.8315 6.02898C16.142 6.0335 16.4421 5.91683 16.668 5.70371Z" />
+				</g>
+				<defs>
+					<clipPath id="clip0_2212_4487">
+						<rect width="20" height="20" fill="white" transform="translate(0.5)" />
+					</clipPath>
+				</defs>
+			</svg>
+		</symbol>
+		<symbol id="twitter">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+				<path
+					d="M2.76172 3.5L11.04 15.3307L3.19694 24.5H6.27767L12.4186 17.3018L17.4544 24.5H25.5163L16.8574 12.1042L24.1969 3.5H21.1641L15.4834 10.1354L10.8486 3.5H2.76172ZM7.24154 5.83333H9.63184L21.0387 22.1667H18.6689L7.24154 5.83333Z" />
+			</svg>
+		</symbol>
+		<symbol id="pinterest">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+				<path
+					d="M14.0002 2.3335C7.55666 2.3335 2.3335 7.55666 2.3335 14.0002C2.3335 20.4437 7.55666 25.6668 14.0002 25.6668C20.4437 25.6668 25.6668 20.4437 25.6668 14.0002C25.6668 7.55666 20.4437 2.3335 14.0002 2.3335ZM14.0002 4.66683C19.1545 4.66683 23.3335 8.84583 23.3335 14.0002C23.3335 19.1545 19.1545 23.3335 14.0002 23.3335C13.1419 23.3335 12.3149 23.2086 11.5256 22.9917C11.7738 22.4915 11.9966 21.9644 12.118 21.4969C12.2522 20.9836 12.8016 18.8901 12.8016 18.8901C13.1586 19.5715 14.202 20.1502 15.3127 20.1502C18.6178 20.1502 21.0002 17.1102 21.0002 13.3325C21.0002 9.71002 18.045 7.00016 14.2417 7.00016C9.51087 7.00016 7.00016 10.1753 7.00016 13.6333C7.00016 15.241 7.85562 17.2425 9.22412 17.8807C9.43179 17.9775 9.54315 17.9355 9.59098 17.7349C9.62832 17.582 9.81349 16.8372 9.89632 16.4907C9.92315 16.3811 9.91096 16.2848 9.82113 16.1763C9.36846 15.6268 9.00537 14.6181 9.00537 13.6766C9.00537 11.2581 10.8361 8.91878 13.9546 8.91878C16.6473 8.91878 18.5324 10.7543 18.5324 13.3781C18.5324 16.3426 17.0354 18.3957 15.0871 18.3957C14.0114 18.3957 13.2034 17.5075 13.4624 16.4155C13.7716 15.1124 14.3716 13.7055 14.3716 12.7651C14.3716 11.924 13.9218 11.2225 12.9862 11.2225C11.886 11.2225 11.0015 12.3591 11.0015 13.884C11.0015 14.8546 11.3296 15.5109 11.3296 15.5109C11.3296 15.5109 10.2439 20.104 10.0444 20.9591C9.94556 21.3812 9.91256 21.8812 9.90999 22.381C6.80856 20.8638 4.66683 17.6852 4.66683 14.0002C4.66683 8.84583 8.84583 4.66683 14.0002 4.66683Z" />
+			</svg>
+		</symbol>
+		<symbol id="link">
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+				<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+				<g id="SVGRepo_iconCarrier">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.975 14.51a1.05 1.05 0 0 0 0-1.485 2.95 2.95 0 0 1 0-4.172l3.536-3.535a2.95 2.95 0 1 1 4.172 4.172l-1.093 1.092a1.05 1.05 0 0 0 1.485 1.485l1.093-1.092a5.05 5.05 0 0 0-7.142-7.142L9.49 7.368a5.05 5.05 0 0 0 0 7.142c.41.41 1.075.41 1.485 0zm2.05-5.02a1.05 1.05 0 0 0 0 1.485 2.95 2.95 0 0 1 0 4.172l-3.5 3.5a2.95 2.95 0 1 1-4.171-4.172l1.025-1.025a1.05 1.05 0 0 0-1.485-1.485L3.87 12.99a5.05 5.05 0 0 0 7.142 7.142l3.5-3.5a5.05 5.05 0 0 0 0-7.142 1.05 1.05 0 0 0-1.485 0z">
+					</path>
+				</g>
+			</svg>
+		</symbol>
+	</svg>
+	<div class="wrapper">
+		<include src="@html/header/header.html"></include>
+		<main>
+			<div class="w-full relative pb-[85.117%] md:pb-[33.7302%]">
+				<picture>
+					<source media="(max-width: 767.98px)" srcset="@img/blog_image02-mobile.jpg" type="image/jpg">
+					<img class="absolute inset-0 w-full h-full object-cover" fetchpriority="high" src="@img/blog_image02.jpg" alt="image">
+				</picture>
+			</div>
+			<div class="container pt-11 pb-7">
+				<nav aria-label="Breadcrumb">
+					<ol class="flex items-center gap-3 whitespace-nowrap scroll-none overflow-x-auto -mx-4 px-4">
+						<li class="flex flex-row-reverse gap-3 items-center text-x icon-chevron before:!text-primary before:text-[8px] before:-rotate-90 _hover-link-accent"><a href="https://nickireland.com/">home</a></li>
+						<li class="flex flex-row-reverse gap-3 items-center text-x icon-chevron before:!text-primary before:text-[8px] before:-rotate-90 _hover-link-accent"><a href="https://nickireland.com/">education</a></li>
+						<li class="text-burgundy text-x" aria-current="page"><span>The 4 C’s</span></li>
+					</ol>
+				</nav>
+			</div>
+			<section>
+				<div class="container">
+					<div class="flex flex-col items-start gap-8 sm:gap-10 sm:justify-between md:flex-row py-6 border-y border-accent">
+						<div class="flex gap-x-12 sm:gap-x-20 gap-y-8 flex-wrap">
+							<div class="grid gap-3">
+								<span class="text-x tracking-wider text-gray uppercase">Category</span>
+								<h4 class="text-base sm:text-2xl font-secondary">Education</h4>
+							</div>
+							<div class="grid gap-3">
+								<span class="text-x tracking-wider text-gray uppercase">Author</span>
+								<h4 class="text-base sm:text-2xl font-secondary">MDT Design</h4>
+							</div>
+							<div class="grid gap-3">
+								<span class="text-x tracking-wider text-gray uppercase">Read time</span>
+								<h4 class="text-base sm:text-2xl font-secondary">10 mins</h4>
+							</div>
+						</div>
+						<div class="grid gap-3 md:w-[228px] md:shrink-0">
+							<span class="text-x tracking-wider text-gray uppercase">Share</span>
+							<div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mt-auto">
+								<a class="social social_gray w-5 h-5" aria-label="facebook" target="_blank" href="#">
+									<svg>
+										<use href="#facebook"></use>
+									</svg>
+								</a>
+								<a class="social social_gray w-5 h-5" aria-label="instagram" target="_blank" href="#">
+									<svg>
+										<use href="#instagram"></use>
+									</svg>
+								</a>
+								<a class="social social_gray w-5 h-5" aria-label="facebook" target="_blank" href="#">
+									<svg>
+										<use href="#twitter"></use>
+									</svg>
+								</a>
+								<a class="social social_gray w-5 h-5" aria-label="instagram" target="_blank" href="#">
+									<svg>
+										<use href="#pinterest"></use>
+									</svg>
+								</a>
+								<a class="social social_gray w-5 h-5" aria-label="link" target="_blank" href="#">
+									<svg>
+										<use href="#link"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="container">
+					<div class="border-b border-accent post-content py-14">
+						<h1>Diamond Education and the 4C’s</h1>
+						<p>Before making such an important and on occasion expensive Diamond purchase, it is important to understand exactly what it is that you are buying. Let our professional in-house diamond graders educate you on diamonds so you
+							have a better understanding of a diamonds characteristics, making sure that you are backed with knowledge and in the position to make the right choice.</p>
+						<p>For an in store diamond education session please <a href="#">contact us</a></p>
+						<div class="flex flex-col gap-10 post-content-second lg:flex-row">
+							<div class="flex-1">
+								<h3>Diamond Carat Weight</h3>
+								<p>Carat is a term used to refer only to the weight of a diamond. It is like a gram or kilogram as it measures only weight. Carat is often confused with the physical size or look of the diamond but it has nothing to do
+									with this. (The confusion may come from gold, where the word carat refers to the purity of the metal).</p>
+								<p>The weight of Carat comes from “carob” which is the seed of the carob tree. One carat originally meant the weight of one “carob seed”. Today a carat is equal to 0.2 grams. Just to confuse things, a carat is divided
+									into 100 points, so that a carat weighing 50 points is described as “half a carat”.</p>
+								<p>Carat is one of the 4C’s of diamonds, the other 3 being Colour, Clarity and Cut of the diamond. If you’d like further explanation of any of these terms, our in-house diamond graders will be happy to clarify them for
+									you. Just contact us!</p>
+							</div>
+							<div class="basis-[32.612%]">
+								<img class="w-full rounded-xl" src="@img/blog/blog-post_image04.jpg" width="467" height="365" alt="image">
+							</div>
+						</div>
+						<div class="flex flex-col gap-10 post-content-second lg:flex-row-reverse">
+							<div class="basis-1/2">
+								<h3>Diamond Colour</h3>
+								<p>Diamonds are naturally found in a wide selection of colours including pink, champagne, blue, green and intense yellow.</p>
+								<p>The most common colour range is from a faint yellow or brownish tint to the extremely valuable colourless diamonds. A colourless diamond is graded ‘D’ and is fairly rare.</p>
+								<p>MDTdesign carry ‘D’ through to ‘G’ colour diamonds which are considered ‘very fine white’</p>
+								<p>Fancy coloured diamonds, such as yellow diamonds, pink diamonds, or champagne diamonds, are graded on a different colour scale. The more intense the colour of the diamond, the more rare, valuable and usually more
+									desirable a stone is.</p>
+								<p>If you would like something really unusual, MDT Design also have one of the largest ranges of coloured stones including pink diamonds, yellow diamonds and champagne diamonds Australia has to offer.</p>
+								<p>Want to know more about how <a href="#" target="_blank" class="dark-link">Diamond Colour</a> as well as <a href="#" target="_blank" class="dark-link">Diamond Clarity</a>, <a href="#" target="_blank"
+										class="dark-link">Diamond Cut</a>, and Diamond Carat Weight, all
+									determine the value and beauty of a diamond?</p>
+								<p><a href="#">Contact us</a> to find out more</p>
+							</div>
+							<div class="basis-1/2">
+								<img class="w-full rounded-xl" src="@img/blog/blog-post_image05.jpg" width="696" height="645" alt="image">
+							</div>
+						</div>
+						<div class="flex flex-col gap-10 post-content-second lg:flex-row">
+							<div class="flex-1">
+								<h3>Diamond Cut</h3>
+								<p>The Cut of a diamond should not be confused with the shape of a diamond, this refers to how well a diamond is cut, not the shape.</p>
+								<p>How a diamond is cut influences how brightly it sparkles and so the cut of a diamond is graded using an internationally accepted grading system.</p>
+								<p>Terms like round, oval, pear and heart are easy to understand as shapes of a diamond but they also describe a type of diamond cut. Terms like <a
+										href="https://www.mdtdesign.com.au/jewellery/dress-rings/channel-set-princess-cut-diamonds-wedding-ring-c590/" target="_blank" class="dark-link">Princess Cut</a>, Marquise
+									Cut, Cushion Cut and Asscher Cut are less easy to
+									picture as a shape in your mind. How well each of these shapes of stones are cut will heavily influence brightness and luster with the best diamond cutters in the world choosing to sacrifice the carat weight of the
+									diamond, to achieve a brighter stone that in turn would then cost more.</p>
+								<p>All these fancy cut diamonds (which means anything but a round cut) do not have a cut grade as every stone can have completely different proportions in terms of length, width and depth. Each of these fancy cut
+									stones needs to be inspected and compared with others in order to find the brightest stone that reflects the most light. Most fancy cut diamonds do have polish and symmetry grades, though this gives no indication
+									of the cut or the brightness of the diamond. Even fancy cut diamonds that have excellent polish and symmetry grades are not guaranteed to be bright stones.</p>
+								<p>Essentially the skill of a diamond cutter lies in releasing the maximum amount of sparkle and lustre from a piece of uncut rough diamond. While all of the 4C’s of diamonds are important, it is the ‘cut’ that most
+									influences the brightness and sparkle of a diamond. A well-proportioned, well-cut diamond will reflect light from each facet and return that light back through the top of the diamond which is known as the “table”.
+									If the cut of a stone is too deep or too shallow light will be lost through the side, resulting in a dull diamond.</p>
+								<p>Want to know more about the importance of Diamond Cut and how it, along with Diamond Colour, Diamond Clarity, <a href="https://www.mdtdesign.com.au/diamond-carat-weight/" target="_blank" class="dark-link">Diamond
+										Carat</a> Weight and Diamond Shape, determine the
+									value and beauty of a diamond?</p>
+								<p>You will be pleased to know that MDTdesign mostly uses ‘Excellent’ cut graded diamonds.</p>
+								<p><a href="#">Contact us</a> and we’ll be happy to explain it all to you.</p>
+							</div>
+							<div class="basis-[32.612%]">
+								<img class="w-full rounded-xl" src="@img/blog/blog-post_image06.jpg" width="467" height="895" alt="image">
+							</div>
+						</div>
+						<div class="flex flex-col gap-10 post-content-second lg:flex-row-reverse">
+							<div class="flex-1">
+								<h3>Diamond Clarity</h3>
+								<p>Almost all diamonds contain small traces of carbon that did not turn into crystal when the diamond was originally being formed deep in the ground. These are called “inclusions” and ideally a perfect diamond would be
+									completely free of them.</p>
+								<p>The Clarity of a Diamond is a system of grading diamonds by how many of these inclusions it has. Preferably the inclusions should not affect the brilliance or brightness of the diamond, nor affect the reflection of
+									light within the diamond that would lower its lustre. The more a diamond is free of inclusions, the higher its Clarity grading.</p>
+								<p>However we have noticed a slight shift in grading over the years with many stones up to VS2 grading having inclusions that are visible to the naked eye.</p>
+								<p>For this reason MDTdesign carefully and independently inspects every diamond before purchasing and if we find that the diamond does have inclusions visible to the naked eye, we will not sell or stock that diamond.
+								</p>
+								<p>This is why it is extremely important to carefully visually inspect any diamond you are considering purchasing. There is a big difference between a good SI2 graded diamond and a bad SI2 graded diamond as there is
+									with all the other gradings. This difference is reflected in the diamond’s price.</p>
+								<p>At MDTdesign, we only sell diamonds rated at the top end of the Clarity scale, mainly ‘VS’ (Very Slight Inclusions) and ‘SI’ (Slight Inclusions) clarity diamonds but, as with colour, if you would prefer a higher
+									clarity graded diamond we are happy to get you what you want. We will be glad to show you in store the differences between the Clarity of various diamonds and help you understand what is true to its definition.</p>
+								<p>We would much rather you have a high end graded SI2 diamond rather than a bad quality SI1 clarity diamond that is not true to its Certificate.</p>
+								<h4>Some advice about buying diamonds.</h4>
+								<p>Please note that Diamond <a href="#" target="_blank" class="dark-link">Certificates</a> can be wrong or just lenient and you should not buy a stone purely based on its certification without inspecting it yourself or
+									having it
+									independently inspected.</p>
+								<p>Also we have discovered recently that many diamonds called ‘clarity enhanced diamonds’ are being sold around Australia. These stones are of poor quality and have either been laser drilled to remove large black
+									inclusions or have had fractures in the stone ‘filled’.</p>
+								<p>At MDTdesign, we DO NOT SELL this quality of diamonds nor would we recommend buying one.</p>
+								<p>We will be happy to further explain the importance of Diamond Clarity, Diamond Colour, Diamond Cut and Diamond Carat Weight, all characteristics that determine the value and beauty of a diamond.</p>
+								<p><a href="#">Contact us</a> to find out more</p>
+							</div>
+							<div class="basis-[32.612%]">
+								<img class="w-full rounded-xl" src="@img/blog/blog-post_image07.jpg" width="467" height="895" alt="image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div>
+				<div class="container">
+					<div class="py-10 border-y border-accent">
+						<div class="flex flex-col items-start gap-2 leading-snug max-w-[708px]">
+							<div class="basis-20 w-20 h-20 rounded-full overflow-hidden">
+								<img class="w-full h-full object-cover" src="@img/avatar.jpg" width="80" height="80" alt="avatar">
+							</div>
+							<span class="text-lg uppercase tracking-4">Nick Theochari</span>
+							<p class="text-xs x:text-x font-light text-gray">Lorem ipsum dolor sit amet consectetur. Pulvinar dui mus et tellus aliquet. Praesent quisque volutpat ultrices consequat consectetur malesuada scelerisque. Nisl massa sed
+								aliquet ut
+								imperdiet
+								faucibus.</p>
+							<a class="text-burgundy text-x underline hover:no-underline" href="#">More from Nick</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section>
+				<div class="container">
+					<div class="grid items-start gap-10 py-10 border-y border-accent lg:grid-cols-2">
+						<div class="flex items-start flex-col gap-8">
+							<h5 class="text-xl">Leave a comment</h5>
+							<p>Form here</p>
+						</div>
+						<div class="flex flex-col" data-showmore="items">
+							<div class="flex flex-col gap-[60px]" data-showmore-content="2">
+								<div class="flex flex-col gap-10">
+									<div class="flex flex-col gap-3 md:gap-4">
+										<div class="flex items-center gap-5 justify-between">
+											<div class="flex flex-col gap-2 md:gap-4 md:flex-row md:items-center">
+												<h5 class="text-xl">Caroline E.</h5>
+												<time class="text-xs x:text-xs" datetime="2025-02-15T19:15:00+00:00">15 February 2025, 7:15PM</time>
+											</div>
+											<div class="flex items-center text-primary gap-4 x:gap-5">
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-like text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value></span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-dislike text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value></span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="flex w-5 h-5 basis-5 shrink-0  hover:opacity-50 transition-opacity duration-300 ease-in-out" type="button" aria-label="like">
+														<i class="cursor-pointer icon-message text-xl"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<p class="text-x x:text-xs x:text-x font-light tracking-wide leading-normal">Lorem ipsum dolor sit amet consectetur. Dolor consequat iaculis suspendisse urna dolor. Cras eget sed iaculis eleifend
+											vitae.</p>
+									</div>
+									<div class="flex flex-col gap-4 ps-5 x:ps-10 relative before:absolute before:top-3 before:left-[10px] x:before:left-5 before:-translate-y-full before:w-[1px] x:before:w-0.5 before:h-[47px] before:bg-primary">
+										<div class="flex items-center gap-5 justify-between">
+											<div class="flex flex-col gap-2 md:gap-4 md:flex-row md:items-center">
+												<h5 class="text-xl">Maddy</h5>
+												<time class="text-xs x:text-x font-light" datetime="2025-02-21T12:52:00+00:00">21 February 2025, 12:52PM</time>
+											</div>
+											<div class="flex items-center text-primary gap-4 x:gap-5">
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-like text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value>1</span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-dislike text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value></span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="flex w-5 h-5 basis-5 shrink-0  hover:opacity-50 transition-opacity duration-300 ease-in-out" type="button" aria-label="like">
+														<i class="cursor-pointer icon-message text-xl"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<p class="text-x x:text-xl font-light tracking-wide leading-normal">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+								<div class="flex flex-col gap-10">
+									<div class="flex flex-col gap-3 md:gap-4">
+										<div class="flex items-center gap-5 justify-between">
+											<div class="flex flex-col gap-2 md:gap-4 md:flex-row md:items-center">
+												<h5 class="text-xl">Bree Smith</h5>
+												<time class="text-xs x:text-x font-light" datetime="2025-01-12T15:24:00+00:00">12 January 2025, 3:24PM</time>
+											</div>
+											<div class="flex items-center text-primary gap-4 x:gap-5">
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-like text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value></span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-dislike text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value></span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="flex w-5 h-5 basis-5 shrink-0  hover:opacity-50 transition-opacity duration-300 ease-in-out" type="button" aria-label="like">
+														<i class="cursor-pointer icon-message text-xl"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<p class="text-x x:text-xl font-light tracking-wide leading-normal">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+								<div class="flex flex-col gap-10">
+									<div class="flex flex-col gap-3 md:gap-4">
+										<div class="flex items-center gap-5 justify-between">
+											<div class="flex flex-col gap-2 md:gap-4 md:flex-row md:items-center">
+												<h5 class="text-xl">Caroline E.</h5>
+												<time class="text-xs x:text-xs" datetime="2025-02-15T19:15:00+00:00">15 February 2025, 7:15PM</time>
+											</div>
+											<div class="flex items-center text-primary gap-4 x:gap-5">
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-like text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value></span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-dislike text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value></span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="flex w-5 h-5 basis-5 shrink-0  hover:opacity-50 transition-opacity duration-300 ease-in-out" type="button" aria-label="like">
+														<i class="cursor-pointer icon-message text-xl"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<p class="text-x x:text-xs x:text-x font-light tracking-wide leading-normal">Lorem ipsum dolor sit amet consectetur. Dolor consequat iaculis suspendisse urna dolor. Cras eget sed iaculis eleifend
+											vitae.</p>
+									</div>
+									<div class="flex flex-col gap-4 ps-5 x:ps-10 relative before:absolute before:top-3 before:left-[10px] x:before:left-5 before:-translate-y-full before:w-[1px] x:before:w-0.5 before:h-[47px] before:bg-primary">
+										<div class="flex items-center gap-5 justify-between">
+											<div class="flex flex-col gap-2 md:gap-4 md:flex-row md:items-center">
+												<h5 class="text-xl">Maddy</h5>
+												<time class="text-xs x:text-x font-light" datetime="2025-02-21T12:52:00+00:00">21 February 2025, 12:52PM</time>
+											</div>
+											<div class="flex items-center text-primary gap-4 x:gap-5">
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-like text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value></span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-dislike text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value></span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="flex w-5 h-5 basis-5 shrink-0  hover:opacity-50 transition-opacity duration-300 ease-in-out" type="button" aria-label="like">
+														<i class="cursor-pointer icon-message text-xl"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<p class="text-x x:text-xl font-light tracking-wide leading-normal">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+								<div class="flex flex-col gap-10">
+									<div class="flex flex-col gap-3 md:gap-4">
+										<div class="flex items-center gap-5 justify-between">
+											<div class="flex flex-col gap-2 md:gap-4 md:flex-row md:items-center">
+												<h5 class="text-xl">Bree Smith</h5>
+												<time class="text-xs x:text-x font-light" datetime="2025-01-12T15:24:00+00:00">12 January 2025, 3:24PM</time>
+											</div>
+											<div class="flex items-center text-primary gap-4 x:gap-5">
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-like text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value></span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-dislike text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value></span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="flex w-5 h-5 basis-5 shrink-0  hover:opacity-50 transition-opacity duration-300 ease-in-out" type="button" aria-label="like">
+														<i class="cursor-pointer icon-message text-xl"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<p class="text-x x:text-xl font-light tracking-wide leading-normal">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+									<div class="flex flex-col gap-4 ps-5 x:ps-10 relative before:absolute before:top-3 before:left-[10px] x:before:left-5 before:-translate-y-full before:w-[1px] x:before:w-0.5 before:h-[47px] before:bg-primary">
+										<div class="flex items-center gap-5 justify-between">
+											<div class="flex flex-col gap-2 md:gap-4 md:flex-row md:items-center">
+												<h5 class="text-xl">Maddy</h5>
+												<time class="text-xs x:text-x font-light" datetime="2025-02-21T12:52:00+00:00">21 February 2025, 12:52PM</time>
+											</div>
+											<div class="flex items-center text-primary gap-4 x:gap-5">
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-like text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value></span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="finger" type="button" aria-label="like" data-counter>
+														<i class="cursor-pointer icon-dislike text-xl"></i>
+													</button>
+													<span class="text-x" data-counter-value></span>
+												</div>
+												<div class="flex items-center gap-2">
+													<button class="flex w-5 h-5 basis-5 shrink-0  hover:opacity-50 transition-opacity duration-300 ease-in-out" type="button" aria-label="like">
+														<i class="cursor-pointer icon-message text-xl"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<p class="text-x x:text-xl font-light tracking-wide leading-normal">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</div>
+							<button class="mt-6 mx-auto cursor-pointer md:mt-14" data-showmore-button type="button" aria-label="Read more">
+								<span class="btn-showmore btn-showmore_more">
+									Read more
+									<i class="icon-arrow relative top-0.5 animate-arrow"></i>
+								</span>
+								<span class="btn-showmore btn-showmore_hide">
+									hide
+									<i class="icon-arrow relative bottom-0.5 !rotate-270 animate-arrow"></i>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="container">
+					<div class="flex flex-col gap-8 border-b border-accent py-16 md:gap-[76px]">
+						<ul class="grid gap-x-4 gap-y-8  mobile-small:grid-cols-2 lg:gap-y-10 lg:grid-cols-4">
+							<li>
+								<div
+									class="group relative pb-[95.378%] rounded-xl overflow-hidden not-last:mb-5 md:not-last:mb-[22px] before:absolute before:inset-0 before:w-full before:h-full before:z-10 before:bg-black/75 before:opacity-0 before:duration-300 before:ease-in-out hover:before:opacity-100">
+									<img class="absolute inset-0 w-full h-full object-cover" width="346" height="300" src="@img/articles/13.jpg" alt="article">
+									<div
+										class="px-8 py-11 flex flex-col gap-5 justify-center items-center absolute inset-0 w-full h-full z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all hover:duration-300 hover:ease-in-out">
+										<div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mt-auto">
+											<a class="social social_arcticle w-7 h-7" aria-label="facebook" target="_blank" href="#">
+												<svg>
+													<use href="#facebook"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+												<svg>
+													<use href="#instagram"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="facebook" target="_blank" href="#">
+												<svg>
+													<use href="#twitter"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+												<svg>
+													<use href="#pinterest"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="link" target="_blank" href="#">
+												<svg>
+													<use href="#link"></use>
+												</svg>
+											</a>
+										</div>
+										<a class="text-x text-white uppercase font-light flex flex-row-reverse items-center gap-x-2 mt-auto icon-arrow _hover-link-arrow _hover-link-accent" href="#">View article</a>
+									</div>
+								</div>
+								<div>
+									<div class="flex flex-col w-full items-start md:flex-row md:items-center gap-2 justify-between text-[10px] 1xs:text-x mb-3 md:not-last:mb-[14px] max-md:text-[14px]">
+										<span class="uppercase leading-title tracking-widest text-burgundy">Education</span>
+										<div class="font-light flex gap-x-2 leading-none">
+											<span class="flex gap-x-2 items-center not-last:after:w-[1px] after:h-full after:bg-primary">MDT Design</span>
+										</div>
+									</div>
+									<h5 class="text-balance text-xl  font-secondary line-clamp-4 not-last:mb-2 _hover-link-accent">
+										<a href="#">Jewellery Care</a>
+									</h5>
+									<p class="font-light leading-normal text-gray line-clamp-4">Every Australian diamond is a precious original—a gem like no other. Only the Argyle Mine in Western Australia produces diamonds in such...</p>
+								</div>
+							</li>
+							<li>
+								<div
+									class="group relative pb-[95.378%] rounded-xl overflow-hidden not-last:mb-5 md:not-last:mb-[22px] before:absolute before:inset-0 before:w-full before:h-full before:z-10 before:bg-black/75 before:opacity-0 before:duration-300 before:ease-in-out hover:before:opacity-100">
+									<img class="absolute inset-0 w-full h-full object-cover" width="346" height="300" src="@img/articles/14.jpg" alt="article">
+									<div
+										class="px-8 py-11 flex flex-col gap-5 justify-center items-center absolute inset-0 w-full h-full z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all hover:duration-300 hover:ease-in-out">
+										<div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mt-auto">
+											<a class="social social_arcticle w-7 h-7" aria-label="facebook" target="_blank" href="#">
+												<svg>
+													<use href="#facebook"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+												<svg>
+													<use href="#instagram"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="facebook" target="_blank" href="#">
+												<svg>
+													<use href="#twitter"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+												<svg>
+													<use href="#pinterest"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="link" target="_blank" href="#">
+												<svg>
+													<use href="#link"></use>
+												</svg>
+											</a>
+										</div>
+										<a class="text-x text-white uppercase font-light flex flex-row-reverse items-center gap-x-2 mt-auto icon-arrow _hover-link-arrow _hover-link-accent" href="#">View article</a>
+									</div>
+								</div>
+								<div>
+									<div class="flex flex-col w-full items-start md:flex-row md:items-center gap-2 justify-between text-[10px] 1xs:text-x mb-3 md:not-last:mb-[14px] max-md:text-[14px]">
+										<span class="uppercase leading-title tracking-widest text-burgundy">Education</span>
+										<div class="font-light flex gap-x-2 leading-none">
+											<span class="flex gap-x-2 items-center not-last:after:w-[1px] after:h-full after:bg-primary">MDT Design</span>
+										</div>
+									</div>
+									<h5 class="text-balance text-xl font-secondary line-clamp-4 not-last:mb-2 _hover-link-accent">
+										<a href="#">Certified Diamonds</a>
+									</h5>
+									<p class="font-light leading-normal text-gray line-clamp-4">Every Australian diamond is a precious original—a gem like no other. Only the Argyle Mine in Western Australia produces diamonds in such...</p>
+								</div>
+							</li>
+							<li>
+								<div
+									class="group relative pb-[95.378%] rounded-xl overflow-hidden not-last:mb-5 md:not-last:mb-[22px] before:absolute before:inset-0 before:w-full before:h-full before:z-10 before:bg-black/75 before:opacity-0 before:duration-300 before:ease-in-out hover:before:opacity-100">
+									<img class="absolute inset-0 w-full h-full object-cover" width="346" height="300" src="@img/articles/15.jpg" alt="article">
+									<div
+										class="px-8 py-11 flex flex-col gap-5 justify-center items-center absolute inset-0 w-full h-full z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all hover:duration-300 hover:ease-in-out">
+										<div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mt-auto">
+											<a class="social social_arcticle w-7 h-7" aria-label="facebook" target="_blank" href="#">
+												<svg>
+													<use href="#facebook"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+												<svg>
+													<use href="#instagram"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="facebook" target="_blank" href="#">
+												<svg>
+													<use href="#twitter"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+												<svg>
+													<use href="#pinterest"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="link" target="_blank" href="#">
+												<svg>
+													<use href="#link"></use>
+												</svg>
+											</a>
+										</div>
+										<a class="text-x text-white uppercase font-light flex flex-row-reverse items-center gap-x-2 mt-auto icon-arrow _hover-link-arrow _hover-link-accent" href="#">View article</a>
+									</div>
+								</div>
+								<div>
+									<div class="flex flex-col w-full items-start md:flex-row md:items-center gap-2 justify-between text-[10px] 1xs:text-x mb-3 md:not-last:mb-[14px] max-md:text-[14px]">
+										<span class="uppercase leading-title tracking-widest text-burgundy">Education</span>
+										<div class="font-light flex gap-x-2 leading-none">
+											<span class="flex gap-x-2 items-center not-last:after:w-[1px] after:h-full after:bg-primary">MDT Design</span>
+										</div>
+									</div>
+									<h5 class="text-balance text-xl font-secondary line-clamp-4 not-last:mb-2 _hover-link-accent">
+										<a href="#">What is a Diamond Certificate?</a>
+									</h5>
+									<p class="font-light leading-normal text-gray line-clamp-4">Every Australian diamond is a precious original—a gem like no other. Only the Argyle Mine in Western Australia produces diamonds in such...</p>
+								</div>
+							</li>
+							<li>
+								<div
+									class="group relative pb-[95.378%] rounded-xl overflow-hidden not-last:mb-5 md:not-last:mb-[22px] before:absolute before:inset-0 before:w-full before:h-full before:z-10 before:bg-black/75 before:opacity-0 before:duration-300 before:ease-in-out hover:before:opacity-100">
+									<img class="absolute inset-0 w-full h-full object-cover" width="346" height="300" src="@img/articles/16.jpg" alt="article">
+									<div
+										class="px-8 py-11 flex flex-col gap-5 justify-center items-center absolute inset-0 w-full h-full z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all hover:duration-300 hover:ease-in-out">
+										<div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mt-auto">
+											<a class="social social_arcticle w-7 h-7" aria-label="facebook" target="_blank" href="#">
+												<svg>
+													<use href="#facebook"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+												<svg>
+													<use href="#instagram"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="facebook" target="_blank" href="#">
+												<svg>
+													<use href="#twitter"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+												<svg>
+													<use href="#pinterest"></use>
+												</svg>
+											</a>
+											<a class="social social_arcticle w-7 h-7" aria-label="link" target="_blank" href="#">
+												<svg>
+													<use href="#link"></use>
+												</svg>
+											</a>
+										</div>
+										<a class="text-x text-white uppercase font-light flex flex-row-reverse items-center gap-x-2 mt-auto icon-arrow _hover-link-arrow _hover-link-accent" href="#">View article</a>
+									</div>
+								</div>
+								<div>
+									<div class="flex flex-col w-full items-start md:flex-row md:items-center gap-2 justify-between text-[10px] 1xs:text-x mb-3 md:not-last:mb-[14px] max-md:text-[14px]">
+										<span class="uppercase leading-title tracking-widest text-burgundy">Education</span>
+										<div class="font-light flex gap-x-2 leading-none">
+											<span class="flex gap-x-2 items-center not-last:after:w-[1px] after:h-full after:bg-primary">MDT Design</span>
+										</div>
+									</div>
+									<h5 class="text-balance text-xl font-secondary line-clamp-4 not-last:mb-2 _hover-link-accent">
+										<a href="#">Jewellery Education</a>
+									</h5>
+									<p class="font-light leading-normal text-gray line-clamp-4">Every Australian diamond is a precious original—a gem like no other. Only the Argyle Mine in Western Australia produces diamonds in such...</p>
+								</div>
+							</li>
+						</ul>
+						<a class="mx-auto text-x uppercase font-light flex flex-row-reverse items-center gap-x-2 icon-arrow _hover-link-arrow _hover-link-accent" href="#">See all articles</a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="relative z-10 flex flex-col items-center justify-center md:min-h-[560px]">
+					<div class="container !max-w-[700px] py-10">
+						<div class="flex flex-col gap-5 justify-center text-center items-center max-md:min-h-[560px] py-10">
+							<div class="uppercase text-white text-x tracking-widest">Love at first sight guarantee</div>
+							<h2 class="text-balance leading-title text-center text-white font-secondary text-[44px] x:text-[44px] lg:text-7xl">Talk to our experts</h2>
+							<div class="grid gap-3 text-white leading-6">
+								<p>
+									Lorem ipsum dolor sit amet consectetur. Euismod nisl sed adipiscing diam. Pellentesque adipiscing ullamcorper mattis senectus tortor.
+								</p>
+							</div>
+							<a class="btn btn_white last:mt-9 !px-8" href="#">
+								<span>Book an appointment</span>
+							</a>
+						</div>
+					</div>
+					<div class="absolute inset-0 w-full h-full gradient-img before:bg-black/43 -z-10">
+						<img class="w-full h-full object-cover" src="@img/kitchen.jpg" width="756" height="560" alt="kitchen">
+					</div>
+				</div>
+			</section>
+		</main>
+		<include src="@html/footer/footer.html"></include>
+	</div>
+	<include src="@html/modals/modal.html"></include>
+</body>
+
+</html>

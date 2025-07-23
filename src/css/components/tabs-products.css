@@ -1,0 +1,32 @@
+.tabs-products__navigation {
+  @apply flex items-center justify-center gap-2.5 max-w-[442px] mx-auto whitespace-nowrap overflow-x-auto mb-10;
+}
+.tabs-products__tab {
+  @apply text-sm px-2 py-3 cursor-pointer flex-[0_0_33.333%] transition-all duration-300 ease-in-out;
+}
+
+.tabs-products__tab:hover {
+  @apply tracking-[0.03em] text-accent transition-all duration-300 ease-in-out;
+}
+
+.tabs-products__tab._tab-active {
+  @apply text-primary tracking-normal;
+}
+
+.tabs-products__tab::after {
+  @apply content-[''] block w-full h-2 bg-accent mt-3 scale-x-0 transition-transform duration-300;
+}
+
+@media (max-width: 767.98px) {
+  .tabs-products__tab::after {
+    @apply h-1;
+  }
+}
+
+.tabs-products__tab._tab-active::after {
+  @apply scale-x-100;
+}
+
+.tabs-products__body._hidden {
+  @apply hidden;
+}

@@ -1,0 +1,85 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .hover\:svg-fill-white:hover svg path {
+    fill: #ffffff;
+    transition: fill 0.6s;
+  }
+}
+
+.container {
+  @apply !max-w-[1512px] mx-auto w-full px-4 md:px-10;
+}
+.container_wide {
+  @apply !max-w-full px-4 md:px-10;
+}
+.scroll-none::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+}
+
+@media (max-width: 767.98px) {
+  .scroll-none-mobile::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+  }
+}
+
+.wrapper {
+  @apply flex flex-col min-h-screen overflow-clip;
+}
+
+.wrapper main {
+  @apply flex-auto;
+}
+
+.lock {
+  @apply overflow-hidden;
+  touch-action: none;
+  overscroll-behavior: none;
+}
+
+._hover-link {
+  @apply hover:text-hover-link transition-colors duration-300 ease-in-out;
+}
+._hover-link-accent {
+  @apply hover:text-hover-link-accent transition-colors duration-300 ease-in-out;
+}
+._hover-link-arrow::before {
+  @apply duration-300 ease-in-out;
+}
+._hover-link-arrow:hover::before {
+  @apply translate-x-2 transition-transform duration-300 ease-in-out;
+}
+
+.gradient-img {
+  @apply before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[1];
+}
+
+.space-dynamic-top {
+  @apply pt-[var(--header-height,128px)] pb-10;
+}
+
+.list-default ul {
+  @apply list-disc ps-4;
+}
+.list-default ol {
+  @apply list-decimal ps-4;
+}
+.nav-link {
+  @apply relative text-x text-gray px-[10px] py-[15px] basis-1/3 text-center;
+}
+
+.nav-link::before {
+  @apply content-[''] absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-0 transition-all duration-300 ease-in-out;
+}
+
+.nav-link._current-section::before {
+  @apply scale-100;
+}

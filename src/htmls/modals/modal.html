@@ -1,0 +1,717 @@
+<div class="modal" id="global-search-modal" aria-hidden="true" role="dialog">
+	<div class="modal__overlay" tabindex="-1">
+		<div class="container">
+			<div class="flex flex-col h-full">
+				<div class="flex items-center justify-center box-shadow-class pb-1">
+					<form class="max-w-[663px] w-full mx-auto" action="#" method="post">
+						<label
+							class="relative flex items-top gap-3 border-b border-[#E7E7E7] before:absolute before:bottom-0 before:w-full before:border-b before:border-black before:scale-0 hover:before:scale-100 before:transition-transform before:duration-300 focus-within:before:scale-100">
+							<i class="icon-search relative -top-0.5 before:text-2xl text-primary"></i>
+							<input autocomplete="off" type="text" name="search" placeholder="Enter search term" data-search-input class="pb-6 w-full outline-0">
+						</label>
+					</form>
+				</div>
+				<div class="overflow-y-hidden overflow-x-hidden  max-h-full basis-auto md:pe-2 md:-me-2">
+					<div class="overflow-y-auto  flex flex-col gap-10 h-full pt-6 pb-25 scroll-none-mobile">
+						<ul class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+							<li class="flex flex-col min-h-[193px]">
+								<a class="flex flex-col relative h-full rounded overflow-hidden mobile-small:min-h-[440px] group" href="#">
+									<div class="flex flex-col h-full max-h-full justify-between gap-8 px-5 py-6 relative z-10 lg:py-8">
+										<h2 class="lg:max-w-[300px] text-balance text-white leading-title font-secondary text-[32px] md:text-[calc(calc(1vw_+_1vh)_*_2)] lg:text-[calc(calc(1vw_+_1vh)_*_2)] template:text-[56px]">Engagement
+											Rings
+										</h2>
+										<div class="btn btn_primary-text btn_big btn_white group-hover:!bg-primary group-hover:!text-white">Shop now</div>
+									</div>
+									<div class="absolute inset-0 w-full h-full gradient-img before:bg-black/30">
+										<picture>
+											<source media="(max-width: 640px)" srcset="@img/global-search/image01-mobile.jpg">
+											<img class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="464" height="440" src="@img/global-search/image01.jpg" alt="hero image">
+										</picture>
+									</div>
+								</a>
+							</li>
+							<li class="flex flex-col min-h-[193px]">
+								<a class="flex flex-col relative h-full rounded overflow-hidden mobile-small:min-h-[440px] group" href="#">
+									<div class="flex flex-col h-full max-h-full justify-between gap-8 px-5 py-6 relative z-10 lg:py-8">
+										<h2 class="lg:max-w-[300px] text-balance text-white leading-title font-secondary text-[32px] md:text-[calc(calc(1vw_+_1vh)_*_2)] lg:text-[calc(calc(1vw_+_1vh)_*_2)] template:text-[56px]">Wedding Rings
+										</h2>
+										<div class="btn btn_primary-text btn_big btn_white group-hover:!bg-primary group-hover:!text-white">Shop now</div>
+									</div>
+									<div class="absolute inset-0 w-full h-full gradient-img before:bg-black/30">
+										<picture>
+											<source media="(max-width: 640px)" srcset="@img/global-search/image01-mobile.jpg">
+											<img class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="464" height="440" src="@img/global-search/image02.jpg" alt="hero image">
+										</picture>
+									</div>
+								</a>
+							</li>
+							<li class="flex flex-col min-h-[193px]">
+								<a class="flex flex-col relative h-full rounded overflow-hidden mobile-small:min-h-[440px] group" href="#">
+									<div class="flex flex-col h-full max-h-full justify-between gap-8 px-5 py-6 relative z-10 lg:py-8">
+										<h2 class="lg:max-w-[300px] text-balance text-white leading-title font-secondary text-[32px] md:text-[calc(calc(1vw_+_1vh)_*_2)] lg:text-[calc(calc(1vw_+_1vh)_*_2)] template:text-[56px]">Jewellery
+										</h2>
+										<div class="btn btn_primary-text btn_big btn_white group-hover:!bg-primary group-hover:!text-white">Shop now</div>
+									</div>
+									<div class="absolute inset-0 w-full h-full gradient-img before:bg-black/30">
+										<picture>
+											<source media="(max-width: 640px)" srcset="@img/global-search/image01-mobile.jpg">
+											<img class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="464" height="440" src="@img/global-search/image03.jpg" alt="hero image">
+										</picture>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div data-tabs class="tabs-products">
+							<nav class="tabs-products__navigation scroll-none" data-tabs-targets>
+								<button class="tabs-products__tab _tab-active" data-tabs-target type="button">Shop</button>
+								<button class="tabs-products__tab" data-tabs-target type="button">Journal</button>
+								<button class="tabs-products__tab" data-tabs-target type="button">Guides & Education</button>
+							</nav>
+							<div class="tabs-products__content" data-tabs-body>
+								<div class="tabs-products__body" data-tabs-item>
+									<ul class="grid grid-cols-2 gap-6 sm:gap-y-10 gap-x-4 lg:grid-cols-4">
+										<li>
+											<div class="swiper" data-slider-products>
+												<div class="swiper-wrapper group">
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/01.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Split Band Diamond Tension Set Ring C1042</h3>
+													</a>
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/02.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Tension Set Engagement Ring with Pink Diamonds C950
+														</h3>
+													</a>
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/03.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in
+															Yellow
+															Gold
+															C251</h3>
+													</a>
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/04.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in
+															White
+															Gold C251
+														</h3>
+													</a>
+												</div>
+												<div class="swiper-pagination swiper-products-pagination mt-5"></div>
+											</div>
+										</li>
+										<li>
+											<div class="swiper" data-slider-products>
+												<div class="swiper-wrapper group">
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/02.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Tension Set Engagement Ring with Pink Diamonds C950
+														</h3>
+													</a>
+												</div>
+												<div class="swiper-pagination swiper-products-pagination mt-5"></div>
+											</div>
+										</li>
+										<li>
+											<div class="swiper" data-slider-products>
+												<div class="swiper-wrapper group">
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/03.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in
+															Yellow
+															Gold
+															C251</h3>
+													</a>
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/04.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in
+															White
+															Gold C251
+														</h3>
+													</a>
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/01.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Split Band Diamond Tension Set Ring C1042</h3>
+													</a>
+												</div>
+												<div class="swiper-pagination swiper-products-pagination mt-5"></div>
+											</div>
+										</li>
+										<li>
+											<div class="swiper" data-slider-products>
+												<div class="swiper-wrapper group">
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/04.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in
+															White
+															Gold C251
+														</h3>
+													</a>
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/02.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Tension Set Engagement Ring with Pink Diamonds C950
+														</h3>
+													</a>
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/03.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in
+															Yellow
+															Gold
+															C251</h3>
+													</a>
+												</div>
+												<div class="swiper-pagination swiper-products-pagination mt-5"></div>
+											</div>
+										</li>
+										<li>
+											<div class="swiper" data-slider-products>
+												<div class="swiper-wrapper group">
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/02.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Tension Set Engagement Ring with Pink Diamonds C950
+														</h3>
+													</a>
+												</div>
+												<div class="swiper-pagination swiper-products-pagination mt-5"></div>
+											</div>
+										</li>
+										<li>
+											<div class="swiper" data-slider-products>
+												<div class="swiper-wrapper group">
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/04.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in
+															White
+															Gold C251
+														</h3>
+													</a>
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/02.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Tension Set Engagement Ring with Pink Diamonds C950
+														</h3>
+													</a>
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/03.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in
+															Yellow
+															Gold
+															C251</h3>
+													</a>
+												</div>
+												<div class="swiper-pagination swiper-products-pagination mt-5"></div>
+											</div>
+										</li>
+										<li>
+											<div class="swiper" data-slider-products>
+												<div class="swiper-wrapper group">
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/02.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Tension Set Engagement Ring with Pink Diamonds C950
+														</h3>
+													</a>
+												</div>
+												<div class="swiper-pagination swiper-products-pagination mt-5"></div>
+											</div>
+										</li>
+										<li>
+											<div class="swiper" data-slider-products>
+												<div class="swiper-wrapper group">
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/01.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Split Band Diamond Tension Set Ring C1042</h3>
+													</a>
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/02.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Tension Set Engagement Ring with Pink Diamonds C950
+														</h3>
+													</a>
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/03.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in
+															Yellow
+															Gold
+															C251</h3>
+													</a>
+													<a href="#" class="swiper-slide flex flex-col gap-4">
+														<div class="relative block aspect-[346/330] group">
+															<img class="w-full h-full object-scale-down group-hover:scale-[1.02] transition-transform duration-1000 will-change-transform" width="346" height="330" src="@img/products/04.png" alt="ring">
+														</div>
+														<h3 class="line-clamp-2 font-light leading-normal group-hover:text-burgundy transition-colors duration-300 max-mobile-small:text-x">Diamond Tension Set Engagement Ring with Split Band in
+															White
+															Gold C251
+														</h3>
+													</a>
+												</div>
+												<div class="swiper-pagination swiper-products-pagination mt-5"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="tabs-products__body _hidden" data-tabs-item>
+									<ul class="grid gap-x-4 gap-y-8  mobile-small:grid-cols-2 lg:gap-y-10 lg:grid-cols-4">
+										<li>
+											<div
+												class="group relative pb-[95.378%] rounded-xl overflow-hidden not-last:mb-5 md:not-last:mb-[22px] before:absolute before:inset-0 before:w-full before:h-full before:z-10 before:bg-black/75 before:opacity-0 before:duration-300 before:ease-in-out hover:before:opacity-100">
+												<img class="absolute inset-0 w-full h-full object-cover" width="346" height="300" src="@img/articles/05.jpg" alt="article">
+												<div
+													class="px-8 py-11 flex flex-col gap-5 justify-center items-center absolute inset-0 w-full h-full z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all hover:duration-300 hover:ease-in-out">
+													<div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mt-auto">
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#facebook"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#instagram"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#twitter"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#pinterest"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="link" target="_blank" href="#">
+															<svg>
+																<use href="#link"></use>
+															</svg>
+														</a>
+													</div>
+													<a class="text-x text-white uppercase font-light flex flex-row-reverse items-center gap-x-2 mt-auto icon-arrow _hover-link-arrow _hover-link-accent" href="#">View article</a>
+												</div>
+											</div>
+											<div>
+												<div class="flex flex-col w-full items-start md:flex-row md:items-center gap-2 justify-between text-[10px] 1xs:text-x mb-3 md:not-last:mb-[14px] max-md:text-[14px]">
+													<span class="uppercase leading-title tracking-widest text-burgundy">Diamonds</span>
+													<div class="font-light flex gap-x-2 leading-none">
+														<time class="flex gap-x-2 items-center text-gray not-last:after:w-[1px] after:h-full after:bg-primary" datetime="2025-03-05">March 5, 2025</time>
+														<span class="flex gap-x-2 items-center not-last:after:w-[1px] after:h-full after:bg-primary">Jane Smith</span>
+													</div>
+												</div>
+
+												<h5 class="text-balance text-xl  font-secondary line-clamp-4 not-last:mb-2 _hover-link-accent">
+													<a href="#">Argyle Australian Diamonds | Rare, natural, & Responsibly Sourced</a>
+												</h5>
+												<p class="font-light leading-normal text-gray line-clamp-4">Every Australian diamond is a precious original—a gem like no other. Only the Argyle Mine in Western Australia produces diamonds in
+													such...
+												</p>
+											</div>
+										</li>
+										<li>
+											<div
+												class="group relative pb-[95.378%] rounded-xl overflow-hidden not-last:mb-5 md:not-last:mb-[22px] before:absolute before:inset-0 before:w-full before:h-full before:z-10 before:bg-black/75 before:opacity-0 before:duration-300 before:ease-in-out hover:before:opacity-100">
+												<img class="absolute inset-0 w-full h-full object-cover" width="346" height="300" src="@img/articles/06.jpg" alt="article">
+												<div
+													class="px-8 py-11 flex flex-col gap-5 justify-center items-center absolute inset-0 w-full h-full z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all hover:duration-300 hover:ease-in-out">
+													<div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mt-auto">
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#facebook"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#instagram"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#twitter"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#pinterest"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="link" target="_blank" href="#">
+															<svg>
+																<use href="#link"></use>
+															</svg>
+														</a>
+													</div>
+													<a class="text-x text-white uppercase font-light flex flex-row-reverse items-center gap-x-2 mt-auto icon-arrow _hover-link-arrow _hover-link-accent" href="#">View article</a>
+												</div>
+											</div>
+											<div>
+												<div class="flex flex-col w-full items-start md:flex-row md:items-center gap-2 justify-between text-[10px] 1xs:text-x mb-3 md:not-last:mb-[14px] max-md:text-[14px]">
+													<span class="uppercase leading-title tracking-widest text-burgundy">Diamonds</span>
+													<div class="font-light flex gap-x-2 leading-none">
+														<time class="flex gap-x-2 items-center text-gray not-last:after:w-[1px] after:h-full after:bg-primary" datetime="2025-03-05">March 5, 2025</time>
+														<span class="flex gap-x-2 items-center not-last:after:w-[1px] after:h-full after:bg-primary">Jane Smith</span>
+													</div>
+												</div>
+												<h5 class="text-balance text-xl font-secondary line-clamp-4 not-last:mb-2 _hover-link-accent">
+													<a href="#">Argyle Australian Diamonds | Rare, natural, & Responsibly Sourced</a>
+												</h5>
+												<p class="font-light leading-normal text-gray line-clamp-4">Every Australian diamond is a precious original—a gem like no other. Only the Argyle Mine in Western Australia produces diamonds in
+													such...
+												</p>
+											</div>
+										</li>
+										<li>
+											<div
+												class="group relative pb-[95.378%] rounded-xl overflow-hidden not-last:mb-5 md:not-last:mb-[22px] before:absolute before:inset-0 before:w-full before:h-full before:z-10 before:bg-black/75 before:opacity-0 before:duration-300 before:ease-in-out hover:before:opacity-100">
+												<img class="absolute inset-0 w-full h-full object-cover" width="346" height="300" src="@img/articles/07.jpg" alt="article">
+												<div
+													class="px-8 py-11 flex flex-col gap-5 justify-center items-center absolute inset-0 w-full h-full z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all hover:duration-300 hover:ease-in-out">
+													<div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mt-auto">
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#facebook"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#instagram"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#twitter"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#pinterest"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="link" target="_blank" href="#">
+															<svg>
+																<use href="#link"></use>
+															</svg>
+														</a>
+													</div>
+													<a class="text-x text-white uppercase font-light flex flex-row-reverse items-center gap-x-2 mt-auto icon-arrow _hover-link-arrow _hover-link-accent" href="#">View article</a>
+												</div>
+											</div>
+											<div>
+												<div class="flex flex-col w-full items-start md:flex-row md:items-center gap-2 justify-between text-[10px] 1xs:text-x mb-3 md:not-last:mb-[14px] max-md:text-[14px]">
+													<span class="uppercase leading-title tracking-widest text-burgundy">Diamonds</span>
+													<div class="font-light flex gap-x-2 leading-none">
+														<time class="flex gap-x-2 items-center text-gray not-last:after:w-[1px] after:h-full after:bg-primary" datetime="2025-03-05">March 5, 2025</time>
+														<span class="flex gap-x-2 items-center not-last:after:w-[1px] after:h-full after:bg-primary">Jane Smith</span>
+													</div>
+												</div>
+												<h5 class="text-balance text-xl font-secondary line-clamp-4 not-last:mb-2 _hover-link-accent">
+													<a href="#">Argyle Australian Diamonds | Rare, natural, & Responsibly Sourced</a>
+												</h5>
+												<p class="font-light leading-normal text-gray line-clamp-4">Every Australian diamond is a precious original—a gem like no other. Only the Argyle Mine in Western Australia produces diamonds in
+													such...
+												</p>
+											</div>
+										</li>
+										<li>
+											<div
+												class="group relative pb-[95.378%] rounded-xl overflow-hidden not-last:mb-5 md:not-last:mb-[22px] before:absolute before:inset-0 before:w-full before:h-full before:z-10 before:bg-black/75 before:opacity-0 before:duration-300 before:ease-in-out hover:before:opacity-100">
+												<img class="absolute inset-0 w-full h-full object-cover" width="346" height="300" src="@img/articles/08.jpg" alt="article">
+												<div
+													class="px-8 py-11 flex flex-col gap-5 justify-center items-center absolute inset-0 w-full h-full z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all hover:duration-300 hover:ease-in-out">
+													<div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mt-auto">
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#facebook"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#instagram"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#twitter"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#pinterest"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="link" target="_blank" href="#">
+															<svg>
+																<use href="#link"></use>
+															</svg>
+														</a>
+													</div>
+													<a class="text-x text-white uppercase font-light flex flex-row-reverse items-center gap-x-2 mt-auto icon-arrow _hover-link-arrow _hover-link-accent" href="#">View article</a>
+												</div>
+											</div>
+											<div>
+												<div class="flex flex-col w-full items-start md:flex-row md:items-center gap-2 justify-between text-[10px] 1xs:text-x mb-3 md:not-last:mb-[14px] max-md:text-[14px]">
+													<span class="uppercase leading-title tracking-widest text-burgundy">Diamonds</span>
+													<div class="font-light flex gap-x-2 leading-none">
+														<time class="flex gap-x-2 items-center text-gray not-last:after:w-[1px] after:h-full after:bg-primary" datetime="2025-03-05">March 5, 2025</time>
+														<span class="flex gap-x-2 items-center not-last:after:w-[1px] after:h-full after:bg-primary">Jane Smith</span>
+													</div>
+												</div>
+												<h5 class="text-balance text-xl font-secondary line-clamp-4 not-last:mb-2 _hover-link-accent">
+													<a href="#">Argyle Australian Diamonds | Rare, natural, & Responsibly Sourced</a>
+												</h5>
+												<p class="font-light leading-normal text-gray line-clamp-4">Every Australian diamond is a precious original—a gem like no other. Only the Argyle Mine in Western Australia produces diamonds in
+													such...
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="tabs-products__body _hidden" data-tabs-item>
+									<ul class="grid gap-x-4 gap-y-8  mobile-small:grid-cols-2 lg:gap-y-10 lg:grid-cols-4">
+										<li>
+											<div
+												class="group relative pb-[95.378%] rounded-xl overflow-hidden not-last:mb-5 md:not-last:mb-[22px] before:absolute before:inset-0 before:w-full before:h-full before:z-10 before:bg-black/75 before:opacity-0 before:duration-300 before:ease-in-out hover:before:opacity-100">
+												<img class="absolute inset-0 w-full h-full object-cover" width="346" height="300" src="@img/articles/13.jpg" alt="article">
+												<div
+													class="px-8 py-11 flex flex-col gap-5 justify-center items-center absolute inset-0 w-full h-full z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all hover:duration-300 hover:ease-in-out">
+													<div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mt-auto">
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#facebook"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#instagram"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#twitter"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#pinterest"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="link" target="_blank" href="#">
+															<svg>
+																<use href="#link"></use>
+															</svg>
+														</a>
+													</div>
+													<a class="text-x text-white uppercase font-light flex flex-row-reverse items-center gap-x-2 mt-auto icon-arrow _hover-link-arrow _hover-link-accent" href="#">View article</a>
+												</div>
+											</div>
+											<div>
+												<div class="flex flex-col w-full items-start md:flex-row md:items-center gap-2 justify-between text-[10px] 1xs:text-x mb-3 md:not-last:mb-[14px] max-md:text-[14px]">
+													<span class="uppercase leading-title tracking-widest text-burgundy">Education</span>
+													<div class="font-light flex gap-x-2 leading-none">
+														<span class="flex gap-x-2 items-center not-last:after:w-[1px] after:h-full after:bg-primary">MDT Design</span>
+													</div>
+												</div>
+
+												<h5 class="text-balance text-xl  font-secondary line-clamp-4 not-last:mb-2 _hover-link-accent">
+													<a href="#">Jewellery Care</a>
+												</h5>
+												<p class="font-light leading-normal text-gray line-clamp-4">Every Australian diamond is a precious original—a gem like no other. Only the Argyle Mine in Western Australia produces diamonds in
+													such...
+												</p>
+											</div>
+										</li>
+										<li>
+											<div
+												class="group relative pb-[95.378%] rounded-xl overflow-hidden not-last:mb-5 md:not-last:mb-[22px] before:absolute before:inset-0 before:w-full before:h-full before:z-10 before:bg-black/75 before:opacity-0 before:duration-300 before:ease-in-out hover:before:opacity-100">
+												<img class="absolute inset-0 w-full h-full object-cover" width="346" height="300" src="@img/articles/14.jpg" alt="article">
+												<div
+													class="px-8 py-11 flex flex-col gap-5 justify-center items-center absolute inset-0 w-full h-full z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all hover:duration-300 hover:ease-in-out">
+													<div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mt-auto">
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#facebook"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#instagram"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#twitter"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#pinterest"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="link" target="_blank" href="#">
+															<svg>
+																<use href="#link"></use>
+															</svg>
+														</a>
+													</div>
+													<a class="text-x text-white uppercase font-light flex flex-row-reverse items-center gap-x-2 mt-auto icon-arrow _hover-link-arrow _hover-link-accent" href="#">View article</a>
+												</div>
+											</div>
+											<div>
+												<div class="flex flex-col w-full items-start md:flex-row md:items-center gap-2 justify-between text-[10px] 1xs:text-x mb-3 md:not-last:mb-[14px] max-md:text-[14px]">
+													<span class="uppercase leading-title tracking-widest text-burgundy">Education</span>
+													<div class="font-light flex gap-x-2 leading-none">
+														<span class="flex gap-x-2 items-center not-last:after:w-[1px] after:h-full after:bg-primary">MDT Design</span>
+													</div>
+												</div>
+												<h5 class="text-balance text-xl font-secondary line-clamp-4 not-last:mb-2 _hover-link-accent">
+													<a href="#">Certified Diamonds</a>
+												</h5>
+												<p class="font-light leading-normal text-gray line-clamp-4">Every Australian diamond is a precious original—a gem like no other. Only the Argyle Mine in Western Australia produces diamonds in
+													such...
+												</p>
+											</div>
+										</li>
+										<li>
+											<div
+												class="group relative pb-[95.378%] rounded-xl overflow-hidden not-last:mb-5 md:not-last:mb-[22px] before:absolute before:inset-0 before:w-full before:h-full before:z-10 before:bg-black/75 before:opacity-0 before:duration-300 before:ease-in-out hover:before:opacity-100">
+												<img class="absolute inset-0 w-full h-full object-cover" width="346" height="300" src="@img/articles/15.jpg" alt="article">
+												<div
+													class="px-8 py-11 flex flex-col gap-5 justify-center items-center absolute inset-0 w-full h-full z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all hover:duration-300 hover:ease-in-out">
+													<div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mt-auto">
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#facebook"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#instagram"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#twitter"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#pinterest"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="link" target="_blank" href="#">
+															<svg>
+																<use href="#link"></use>
+															</svg>
+														</a>
+													</div>
+													<a class="text-x text-white uppercase font-light flex flex-row-reverse items-center gap-x-2 mt-auto icon-arrow _hover-link-arrow _hover-link-accent" href="#">View article</a>
+												</div>
+											</div>
+											<div>
+												<div class="flex flex-col w-full items-start md:flex-row md:items-center gap-2 justify-between text-[10px] 1xs:text-x mb-3 md:not-last:mb-[14px] max-md:text-[14px]">
+													<span class="uppercase leading-title tracking-widest text-burgundy">Education</span>
+													<div class="font-light flex gap-x-2 leading-none">
+														<span class="flex gap-x-2 items-center not-last:after:w-[1px] after:h-full after:bg-primary">MDT Design</span>
+													</div>
+												</div>
+												<h5 class="text-balance text-xl font-secondary line-clamp-4 not-last:mb-2 _hover-link-accent">
+													<a href="#">What is a Diamond Certificate?</a>
+												</h5>
+												<p class="font-light leading-normal text-gray line-clamp-4">Every Australian diamond is a precious original—a gem like no other. Only the Argyle Mine in Western Australia produces diamonds in
+													such...
+												</p>
+											</div>
+										</li>
+										<li>
+											<div
+												class="group relative pb-[95.378%] rounded-xl overflow-hidden not-last:mb-5 md:not-last:mb-[22px] before:absolute before:inset-0 before:w-full before:h-full before:z-10 before:bg-black/75 before:opacity-0 before:duration-300 before:ease-in-out hover:before:opacity-100">
+												<img class="absolute inset-0 w-full h-full object-cover" width="346" height="300" src="@img/articles/16.jpg" alt="article">
+												<div
+													class="px-8 py-11 flex flex-col gap-5 justify-center items-center absolute inset-0 w-full h-full z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all hover:duration-300 hover:ease-in-out">
+													<div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mt-auto">
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#facebook"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#instagram"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle text-white w-7 h-7" aria-label="facebook" target="_blank" href="#">
+															<svg>
+																<use href="#twitter"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="instagram" target="_blank" href="#">
+															<svg>
+																<use href="#pinterest"></use>
+															</svg>
+														</a>
+														<a class="social social_arcticle w-7 h-7" aria-label="link" target="_blank" href="#">
+															<svg>
+																<use href="#link"></use>
+															</svg>
+														</a>
+													</div>
+													<a class="text-x text-white uppercase font-light flex flex-row-reverse items-center gap-x-2 mt-auto icon-arrow _hover-link-arrow _hover-link-accent" href="#">View article</a>
+												</div>
+											</div>
+											<div>
+												<div class="flex flex-col w-full items-start md:flex-row md:items-center gap-2 justify-between text-[10px] 1xs:text-x mb-3 md:not-last:mb-[14px] max-md:text-[14px]">
+													<span class="uppercase leading-title tracking-widest text-burgundy">Education</span>
+													<div class="font-light flex gap-x-2 leading-none">
+														<span class="flex gap-x-2 items-center not-last:after:w-[1px] after:h-full after:bg-primary">MDT Design</span>
+													</div>
+												</div>
+												<h5 class="text-balance text-xl font-secondary line-clamp-4 not-last:mb-2 _hover-link-accent">
+													<a href="#">Jewellery Education</a>
+												</h5>
+												<p class="font-light leading-normal text-gray line-clamp-4">Every Australian diamond is a precious original—a gem like no other. Only the Argyle Mine in Western Australia produces diamonds in
+													such...
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

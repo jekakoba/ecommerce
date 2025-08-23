@@ -51,6 +51,9 @@ html {
 ._hover-link-accent {
   @apply hover:text-hover-link-accent transition-colors duration-300 ease-in-out;
 }
+._hover-link-accent-dark {
+  @apply hover:text-hover-link-accent transition-colors duration-300 ease-in-out;
+}
 ._hover-link-arrow::before {
   @apply duration-300 ease-in-out;
 }
@@ -82,4 +85,20 @@ html {
 
 .nav-link._current-section::before {
   @apply scale-100;
+}
+
+._scale-img {
+  @apply overflow-hidden;
+}
+._scale-img img {
+  @apply transition-transform duration-700 ease-in-out;
+}
+._scale-img:hover img {
+  @apply scale-105;
+}
+
+.custom-gradient-bg-color::before {
+  content: "";
+  @apply absolute top-0 left-0 w-full h-full bg-gradient-to-r;
+  background: linear-gradient(to right, white 50%, var(--color-accent-bg) 50%);
 }

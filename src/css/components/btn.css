@@ -9,7 +9,9 @@
 .btn {
   @apply font-sans !leading-btn inline-flex items-center px-5 py-[10px] justify-center rounded-sm uppercase text-lg tracking-wider text-center min-h-12 bg-white transition-colors duration-300 max-sm:w-full cursor-pointer;
 }
-
+.btn_full {
+  @apply w-full;
+}
 .btn_dark {
   @apply bg-primary text-white hover:bg-biege-25 hover:text-primary;
 }

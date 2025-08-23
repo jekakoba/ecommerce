@@ -34,6 +34,12 @@
 .logo svg {
   @apply w-full h-full;
 }
+
+/* .menu-item a:hover{:has(.logo) svg path} {
+  @apply fill-primary;
+
+} */
+
 .logo svg path {
   @apply [.scrolled-page_&]:fill-primary;
 }

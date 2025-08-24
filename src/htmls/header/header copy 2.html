@@ -63,15 +63,16 @@
 									</form>
 								</div>
 								<nav class='relative z-2 min-h-full w-full pt-2' data-spoiler data-spoiler-resize="767.98">
-									<ul class="flex flex-col" data-sub-menu>
-										<li class="grid grid-cols-[60%_1fr] not-last:mb-2 items-start">
+									<ul class="flex flex-col">
+										<li
+											class="grid grid-cols-[60%_1fr] not-last:mb-2 items-start group/vissible first:[&>a]:text-burgundy first:[&>a]:bg-accent-bg first:[&>ul]:!block not-first:[&>a]:hover:bg-accent-bg not-first:[&>a]:hover:text-burgundy">
 											<a href="#"
 												class="flex items-start justify-between relative z-5 rounded-l py-4 ps-5 pe-10  w-full text-xl hover:bg-accent-bg hover:text-burgundy group-hover/vissible:[&:not(:hover)]:!transparent group-hover/vissible:[&:not(:hover)]:!text-primary"
 												data-spoiler-title>
 												Styles
 												<i class="icon-chevron -rotate-90 text-[10px] text-primary self-center"></i>
 											</a>
-											<ul class='absolute top-0 right-0 w-full min-h-full !overflow-visible ps-[63%] pt-4 pe-[10px] before:absolute before:-translate-y-1/2 before:top-1/2 before:-right-[17px] before:bg-[#F6F3EF] before:w-0.5 before:h-full'
+											<ul class='absolute top-0 right-0 w-full min-h-full !overflow-visible ps-[63%] pt-4 pe-[10px] before:absolute before:-translate-y-1/2 before:top-1/2 before:-right-[17px] before:bg-[#F6F3EF] before:w-0.5 before:h-full !hidden group-hover/vissible:!block'
 												data-spoiler-content>
 												<li class="flex gap-3 w-full not-last:mb-3">
 													<a class="flex gap-3 w-full py-[11px] group" href="#">
@@ -225,14 +226,15 @@
 												</li>
 											</ul>
 										</li>
-										<li class="grid grid-cols-[60%_1fr] not-last:mb-2 items-start">
+										<li
+											class="grid grid-cols-[60%_1fr] not-last:mb-2 items-start group/vissible first:[&>a]:text-burgundy first:[&>a]:bg-accent-bg first:[&>ul]:!block not-first:[&>a]:hover:bg-accent-bg not-first:[&>a]:hover:text-burgundy">
 											<a href=" #"
 												class="flex items-start justify-between relative z-5 rounded-l py-4 ps-5 pe-10  w-full text-xl hover:bg-accent-bg hover:text-burgundy group-hover/vissible:[&:not(:hover)]:!transparent group-hover/vissible:[&:not(:hover)]:!text-primary"
 												data-spoiler-title>
 												Cuts
 												<i class="icon-chevron -rotate-90 text-[10px] text-primary self-center"></i>
 											</a>
-											<ul class='absolute top-0 right-0 w-full min-h-full !overflow-visible ps-[63%] pt-4 pe-[10px] before:absolute before:-translate-y-1/2 before:top-1/2 before:-right-[17px] before:bg-[#F6F3EF] before:w-0.5 before:h-full'
+											<ul class='absolute top-0 right-0 w-full min-h-full !overflow-visible ps-[63%] pt-4 pe-[10px] before:absolute before:-translate-y-1/2 before:top-1/2 before:-right-[17px] before:bg-[#F6F3EF] before:w-0.5 before:h-full !hidden group-hover/vissible:!block'
 												data-spoiler-content>
 												<li class="flex gap-3 w-full not-last:mb-3">
 													<a class="flex gap-3 w-full py-[11px] group" href="#">
@@ -296,14 +298,15 @@
 												</li>
 											</ul>
 										</li>
-										<li class="grid grid-cols-[60%_1fr] not-last:mb-2 items-start">
+										<li
+											class="grid grid-cols-[60%_1fr] not-last:mb-2 items-start group/vissible first:[&>a]:text-burgundy first:[&>a]:bg-accent-bg first:[&>ul]:!block not-first:[&>a]:hover:bg-accent-bg not-first:[&>a]:hover:text-burgundy">
 											<a href=" #"
 												class="flex items-start justify-between relative z-5 rounded-l py-4 ps-5 pe-10  w-full text-xl hover:bg-accent-bg hover:text-burgundy group-hover/vissible:[&:not(:hover)]:!transparent group-hover/vissible:[&:not(:hover)]:!text-primary"
 												data-spoiler-title>
-												Coloured Gemstones
+												Cuts
 												<i class="icon-chevron -rotate-90 text-[10px] text-primary self-center"></i>
 											</a>
-											<ul class='absolute top-0 right-0 w-full min-h-full !overflow-visible ps-[63%] pt-4 pe-[10px] before:absolute before:-translate-y-1/2 before:top-1/2 before:-right-[17px] before:bg-[#F6F3EF] before:w-0.5 before:h-full'
+											<ul class='absolute top-0 right-0 w-full min-h-full !overflow-visible ps-[63%] pt-4 pe-[10px] before:absolute before:-translate-y-1/2 before:top-1/2 before:-right-[17px] before:bg-[#F6F3EF] before:w-0.5 before:h-full !hidden group-hover/vissible:!block'
 												data-spoiler-content>
 												<li class="flex gap-3 w-full not-last:mb-3">
 													<a class="flex gap-3 w-full py-[11px] group" href="#">
@@ -320,6 +323,46 @@
 														<img class="basis-[15px] w-[15px] h-[15px] shrink-0 object-contain" src="@img/icons/diamond.svg" width="15" height="15" alt="diamond">
 														<span class="flex gap-3 w-full justify-between">
 															<span class="text-x group-hover:text-hover-link-accent transition-colors duration-300 ease-in-out">Channel Set</span>
+															<i
+																class="icon-arrow group-hover:text-hover-link-accent group-hover:translate-x-2 group-hover:transition-transform group-hover:duration-300 group-hover:ease-in-out duration-300 ease-in-out"></i>
+														</span>
+													</a>
+												</li>
+												<li class="flex gap-3 w-full not-last:mb-3">
+													<a class="flex gap-3 w-full py-[11px] group" href="#">
+														<img class="basis-[15px] w-[15px] h-[15px] shrink-0 object-contain" src="@img/icons/diamond.svg" width="15" height="15" alt="diamond">
+														<span class="flex gap-3 w-full justify-between">
+															<span class="text-x group-hover:text-hover-link-accent transition-colors duration-300 ease-in-out">Trilogy / Three Stone</span>
+															<i
+																class="icon-arrow group-hover:text-hover-link-accent group-hover:translate-x-2 group-hover:transition-transform group-hover:duration-300 group-hover:ease-in-out duration-300 ease-in-out"></i>
+														</span>
+													</a>
+												</li>
+												<li class="flex gap-3 w-full not-last:mb-3">
+													<a class="flex gap-3 w-full py-[11px] group" href="#">
+														<img class="basis-[15px] w-[15px] h-[15px] shrink-0 object-contain" src="@img/icons/diamond.svg" width="15" height="15" alt="diamond">
+														<span class="flex gap-3 w-full justify-between">
+															<span class="text-x group-hover:text-hover-link-accent transition-colors duration-300 ease-in-out">Halo</span>
+															<i
+																class="icon-arrow group-hover:text-hover-link-accent group-hover:translate-x-2 group-hover:transition-transform group-hover:duration-300 group-hover:ease-in-out duration-300 ease-in-out"></i>
+														</span>
+													</a>
+												</li>
+												<li class="flex gap-3 w-full not-last:mb-3">
+													<a class="flex gap-3 w-full py-[11px] group" href="#">
+														<img class="basis-[15px] w-[15px] h-[15px] shrink-0 object-contain" src="@img/icons/diamond.svg" width="15" height="15" alt="diamond">
+														<span class="flex gap-3 w-full justify-between">
+															<span class="text-x group-hover:text-hover-link-accent transition-colors duration-300 ease-in-out">Hidden Halo</span>
+															<i
+																class="icon-arrow group-hover:text-hover-link-accent group-hover:translate-x-2 group-hover:transition-transform group-hover:duration-300 group-hover:ease-in-out duration-300 ease-in-out"></i>
+														</span>
+													</a>
+												</li>
+												<li class="flex gap-3 w-full not-last:mb-3">
+													<a class="flex gap-3 w-full py-[11px] group" href="#">
+														<img class="basis-[15px] w-[15px] h-[15px] shrink-0 object-contain" src="@img/icons/diamond.svg" width="15" height="15" alt="diamond">
+														<span class="flex gap-3 w-full justify-between">
+															<span class="text-x group-hover:text-hover-link-accent transition-colors duration-300 ease-in-out">Cluster</span>
 															<i
 																class="icon-arrow group-hover:text-hover-link-accent group-hover:translate-x-2 group-hover:transition-transform group-hover:duration-300 group-hover:ease-in-out duration-300 ease-in-out"></i>
 														</span>

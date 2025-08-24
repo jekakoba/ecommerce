@@ -1,28 +1,28 @@
-.init .spoiler-panel {
+.init [data-spoiler-title] {
   @apply cursor-pointer select-none;
 }
 
-.spoiler-content {
+[data-spoiler-content] {
   @apply overflow-hidden hidden transition-all duration-0;
 }
 
-.init-show .spoiler-content,
-.init-hidden .spoiler-content {
+.init-show [data-spoiler-content],
+.init-hidden [data-spoiler-content] {
   @apply block;
 }
 
-.init .spoiler-content {
+.init [data-spoiler-content] {
   @apply hidden;
 }
 
-.init.show .spoiler-content {
+.init.show [data-spoiler-content] {
   @apply block;
 }
 
-.spoiler.init .spoiler-content > * {
+.spoiler.init [data-data-spoiler-content] > * {
   @apply opacity-0 transition-opacity duration-500;
 }
 
-.spoiler.init.spoiler-open .spoiler-content > * {
+.spoiler.init.spoiler-open [data-spoiler-content] > * {
   @apply opacity-100;
 }

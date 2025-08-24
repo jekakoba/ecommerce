@@ -23,7 +23,23 @@ import counterComments from './components/counterComments.js';
 import mircoModalInit from './components/modal/modalConfig.js'
 import stepsRingSize from './components/stepsRingSize.js';
 
-// Initialize components when DOM is ready
+
+function showSubMenuItem() {
+	const submenu = document.querySelectorAll('[data-sub-menu]');
+	if (submenu.length === 0) return;
+	const submenuItems = document.querySelectorAll('[data-sub-menu] > li');
+	submenuItems.forEach(item => {
+		item.addEventListener('click', function (e) {
+			const target = e.target;
+			if (target.closest('a')) {
+				e.preventDefault();
+				submenuItems.forEach(otherItem => otherItem.classList.remove('active-sub-menu-item'));
+				item.classList.add('active-sub-menu-item');
+			}
+		});
+	});
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	console.log('DOM fully loaded and parsed');
 	watchElementHeights();
@@ -40,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	addToEnquiryList()
 	counterComments();
 	stepsRingSize();
+	showSubMenuItem()
 	// Initialize components
 	// const components = {};
 

@@ -25,21 +25,51 @@ import stepsRingSize from './components/stepsRingSize.js';
 
 
 function showSubMenuItem() {
-	const submenu = document.querySelectorAll('[data-sub-menu]');
-	if (submenu.length === 0) return;
-	const submenuItems = document.querySelectorAll('[data-sub-menu] > li');
+	const submenu = document.querySelector('[data-sub-menu]');
+	if (!submenu) return;
+	const submenuItems = submenu.querySelectorAll('[data-sub-menu-item]');
+	if (submenuItems.length > 0) {
+		submenuItems[0].classList.add('active-sub-menu-item');
+	}
 	submenuItems.forEach(item => {
-		item.addEventListener('click', function (e) {
-			const target = e.target;
-			if (target.closest('a')) {
-				e.preventDefault();
-				submenuItems.forEach(otherItem => otherItem.classList.remove('active-sub-menu-item'));
-				item.classList.add('active-sub-menu-item');
-			}
+		item.addEventListener('mouseenter', function () {
+			submenuItems.forEach(otherItem => {
+				otherItem.classList.remove('active-sub-menu-item');
+			});
+			item.classList.add('active-sub-menu-item');
 		});
 	});
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+	const dropdownItems = document.querySelectorAll('[data-open-dropdown]');
+	const htmlElement = document.documentElement;
+
+	dropdownItems.forEach(item => {
+		const dropdown = item.querySelector('[data-dropdown]');
+		const link = item.querySelector('a');
+
+		// Prevent default behavior of the link
+		link.addEventListener('click', (e) => {
+			e.preventDefault();
+		});
+
+		// Handle hover
+		item.addEventListener('mouseenter', () => {
+			htmlElement.classList.add('open-dropdown-menu');
+		});
+
+		// Handle click to toggle
+		item.addEventListener('click', () => {
+			htmlElement.classList.toggle('open-dropdown-menu');
+		});
+
+		// Remove class when mouse leaves dropdown
+		dropdown.addEventListener('mouseleave', () => {
+			htmlElement.classList.remove('open-dropdown-menu');
+		});
+	});
+});
 document.addEventListener('DOMContentLoaded', () => {
 	console.log('DOM fully loaded and parsed');
 	watchElementHeights();
@@ -57,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	counterComments();
 	stepsRingSize();
 	showSubMenuItem()
+	showDropdownMenu()
 	// Initialize components
 	// const components = {};
 
